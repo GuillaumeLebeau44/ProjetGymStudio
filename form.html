@@ -5,46 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleForm.css">
+    <script src="scriptForm.js"></script>
     <title>Form GymStudio</title>
 </head>
 
 <body>
     <header>
-        <ul>
-            <li>Menu Burger</li>
-            <li>Logo</li>
-        </ul>
+        <p>Menu Burger</p>
+        <p>logoGymStudio</p>
     </header>
-    <section id="form">
+    <section id="formArea">
         <h1>Formulaire de réservation</h1>
-        <form>
-            <label for="coachName">Le Coach</label>
-            <input type="file" id="coachName">
-            <label for="sportName">Le Sport</label>
-            <input type="text" id="sportName">
-            <label for="nameClient">Nom :</label>
-            <input type="text" id="nameClient">
-            <label for="firstNameClient">Prénom :</label>
-            <input type="text" id="firstNameClient">
-            <label for="availableClient">Vos disponibilités :</label>
-            <input type="text" id="availableClient">
-            <label for="commentClient"></label>
-            <input type="text" id="commentClient">
+        <form id="form">
+            <div id="sportCoachPic">
+                <div id="sportCoachClient">
+                    <div id="sportName">
+                        <label for="sportName">Le Sport</label>
+                        <select name="selectSportName">
+                            <option value="noSportSelected"> </option>
+                            <option value="sportBoxe">Boxe</option>
+                            <option value="sportMuscu">Musculation</option>
+                            <option value="sportCardio">Cardio</option>
+                            <option value="sportYoga">Yoga</option>
+                            <option value="sportAquaBike">AquaBike</option>
+                            <option value="sportAquaGym">AquaGym</option>
+                        </select>
+                    </div>
+
+                    <div id="coachName">
+                        <label for="coachName">Le Coach</label>
+                        <select name="selectCoachName">
+                            <option value="noCoachSelected"> </option>
+                            <option value="coachBoxe1">Bob - Boxe</option>
+                            <option value="coachBoxe2">Laura - Boxe</option>
+                            <option value="coachMuscu1">Anaïs - Musculation</option>
+                            <option value="coachMuscu2">Thomas - Musculation</option>
+                            <option value="coachAquaBike">Léa - AquaBike</option>
+                            <option value="coachCardio1">Arthur - Cardio</option>
+                            <option value="coachCardio2">Luc - Cardio</option>
+                            <option value="coachAquaGym">Inès - AquaGym</option>
+                            <option value="coachYoga">Clémence - Yoga</option>
+                        </select>
+                    </div>
+                    <div id="nameClient">
+                        <label for="nameClient">Nom :</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div id="firstNameClient">
+                    <label for="firstNameClient">Prénom :</label>
+                    <input type="text">
+                </div>
+                <div id="picCoachForm">
+                    <img id="coachFormBox1" src="images/coachBoxOneForm.png">
+                    <!-- <img id="coachFormBox2" src="images/coachBoxTwoForm.jpg">
+                    <img id="coachFormMuscu1" src="images/coachMusculationForm.jpg">
+                    <img id="coachFormMuscu2" src="images/coachMusculationTwoForm.jpg">
+                    <img id="coachFormAquaBike" src="images/coachAquaBikeForm.jpg">
+                    <img id="coachFormCardio1" src="images/coachCardioForm.jpg">
+                    <img id="coachFormCardio2" src="images/coachCardioTwoForm.jpeg">
+                    <img id="coachFormAquaGym" src="images/coachAquaGymForm.webp">
+                    <img id="coachFormYoga" src="images/coachYogaForm.jpg"> -->
+                </div>
+            </div>
+            <div id="availableCommentClient">
+                <div id="availableClient">
+                    <label for="availableClient">Vos disponibilités :</label>
+                    <input id="textAvailableClient" type="text">
+                </div>
+                <div id="commentClient">
+                    <!-- <textarea id="comment" rows="5" cols="144" placeholder="Commentaires éventuels..."></textarea> -->
+                    <input placeholder="Commentaires éventuels..." id="textCommentClient" type="text">
+                </div>
+            </div>
         </form>
-        <div></div>
+        <button name="button" type="submit" onClick="ouvrirPopup()">Valider et envoyer</button>
     </section>
 
-    <Section id="localisation">
-        <div>
+    <section id="localisation">
+        <div class="locPart1">
             <h2>Où sommes-nous :</h2>
             <p>Retrouvez-nous au pied du chateau des Ducs de Bretagne.</p>
-            <p>Accessible directement par la ligne 1.</p>
-            <img>
+            <p>Accessible directement par la ligne <img class="logoTram" src="images/logoTram.png">.</p>
         </div>
         <div>
-            <img scr="images/">
+            <img class="planTram" src="images/planArea.png">
         </div>
-    </Section>
+    </section>
+
+    <footer>
+        <p>&copy;logoGymStudio</p>
+        <p>Retrouvez-nous sur les réseaux sociaux : <img class="logoX" src="images/logoX.png"> <img class="logoInsta"
+                src="images/logoInsta.png"></p>
+    </footer>
 </body>
 
 </html>

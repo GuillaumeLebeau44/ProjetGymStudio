@@ -1,8 +1,138 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #242328;
+    color: white;
+    font-size: 1.5rem;
+    /* font-family:; */
 }
 
-ul {
+header {
+    background-color: #183d3d;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    /* font-family: cormorant garamond; */
+    font-size: 2rem;
+}
+
+#formArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#sportCoachPic {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sportCoachClient {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sportName,
+#coachName,
+#nameClient,
+#firstNameClient {
+    display: flex;
+    flex-direction: column;
+}
+
+#firstNameClient {
+    justify-content: flex-end;
+    align-content: center;
+}
+
+#infoClient {
+    display: flex;
+}
+
+#picCoachForm {
+    width: 15vw;
+}
+
+#coachFormBox1,
+#coachFormBox2,
+#coachFormMuscu1,
+#coachFormMuscu2,
+#coachFormAquaBike,
+#coachFormCardio1,
+#coachFormCardio2,
+#coachFormAquaGym,
+#coachFormYoga {
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    filter: drop-shadow(15px 15px 4px #183D3D);
+}
+
+#textCommentClient,
+#textAvailableClient {
+    width: 100%;
+}
+
+#availableCommentClient {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3%;
+}
+
+button {
+    border-radius: 30px;
     background-color: #183D3D;
+    font-size: 1.5rem;
+    width: auto;
+    box-shadow: 2px 4px black;
+    color: white;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #122a2b;
+}
+
+#localisation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.planTram {
+    width: 20vw;
+}
+
+.logoTram,
+.logoX,
+.logoInsta {
+    width: 2vw;
+}
+
+footer {
+    background-color: #183D3D;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logoX:hover,
+.logoInsta:hover {
+    cursor: pointer;
 }

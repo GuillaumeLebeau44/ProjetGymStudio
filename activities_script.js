@@ -14,7 +14,7 @@ function show_card_boxe() {
         card_yoga.style.display = "none";
         card_aquagym.style.display = "none";
         card_aquabike.style.display = "none";
-    } else { card_boxe.style.display = "none"; }
+    }
 }
 
 function show_card_cardio() {
@@ -31,7 +31,7 @@ function show_card_cardio() {
         card_yoga.style.display = "none";
         card_aquagym.style.display = "none";
         card_aquabike.style.display = "none";
-    } else { card_cardio.style.display = "none"; }
+    }
 }
 
 function show_card_musculation() {
@@ -48,7 +48,7 @@ function show_card_musculation() {
         card_yoga.style.display = "none";
         card_aquagym.style.display = "none";
         card_aquabike.style.display = "none";
-    } else { card_musculation.style.display = "none"; }
+    }
 }
 
 function show_card_yoga() {
@@ -65,7 +65,7 @@ function show_card_yoga() {
         card_yoga.style.display = "contents";
         card_aquagym.style.display = "none";
         card_aquabike.style.display = "none";
-    } else { card_yoga.style.display = "none"; }
+    } 
 }
 
 function show_card_aquagym() {
@@ -82,7 +82,7 @@ function show_card_aquagym() {
         card_yoga.style.display = "none";
         card_aquagym.style.display = "contents";
         card_aquabike.style.display = "none";
-    } else { card_aquagym.style.display = "none"; }
+    }
 }
 
 function show_card_aquabike() {
@@ -99,7 +99,7 @@ function show_card_aquabike() {
         card_yoga.style.display = "none";
         card_aquagym.style.display = "none";
         card_aquabike.style.display = "contents";
-    } else { card_aquabike.style.display = "none"; }
+    }
 }
 
 

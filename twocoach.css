@@ -32,11 +32,8 @@ div h1{
 }
 
 h2 {
-    margin-bottom: 1.5em;
     font-size: 2em;
-    margin-top: 1.5em;
     font-family: 'Nunito Sans', sans-serif ;
-    margin-right: 1em;
 }
 
 p {
@@ -44,102 +41,81 @@ p {
     font-family: 'Nunito Sans', sans-serif ;
 }
 
-/* #button {
-    display :flex;
-    justify-content: flex-start;
-} */
-
-#button a{
+#button1 a, #button2 a{
     border-style: solid;
     border-radius: 20px;
     border-color:  #183D3D ;
+    color: white;
     padding: 12px;
     background-color: #183D3D;
     width : 40% ;
     text-align: center;
     font-family: 'Nunito Sans', sans-serif ;
     font-size: 1.5em;
-    /* margin-top: 2em; */
+    margin-top: 2em;
 }
 
-div #allcoach{
+/* div .allcoach{
     display:block;
-}
+} */
 
-div #muscu1{
+div #coach1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
+    grid-template-areas: 
+    "a a b"
+    "a a c"
+    ;
+    padding-inline: 15%;
+    padding-top: 5%;
+    align-items: center;
+    justify-items: center;
 }
 
-div #muscu2{
+#photo1 img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+border-radius: 10%;
+}
+
+div #coach2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
+    grid-template-areas: 
+    "e d d"
+    "f d d"
+    ;
+    padding-inline: 15%;
+    padding-top: 5%;
+    align-items: center;
+    justify-items: center;
 }
 
-.photo1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
+#photo2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    }
+
 
 #text1, #text2{
     color:white;
 }
 
-/* css pour chaque coach */
+#photo1{grid-area: a;}
+#text1{grid-area: b;}
+#button1{grid-area: c;}
 
-
-
-/* div .photo1 {
-    float: left;
-    height: 35vh;
-    width: 35vh;
-    height: auto;
-    max-width: 100vw;
-    border-radius: 10%;
-    margin-right: 8em;
-    margin-left: 30em;
-    margin-top: 1em;
-}
-
-
-div #text1 {
-        margin-top: 2em;
-        margin-bottom: 3em;
-        width: 100vw;
-        height: 30vh;
-        margin-left: 10em;
-        color: white;
-}
-
-
-div .photo2{
-    float: right;
-    height: auto;
-    max-width: 100vw;
-    border-radius: 10%;
-    margin-right: 40em;
-    margin-bottom: 5em;
-    margin-top: 1em;
-    
-}
-
-
-
-div #text2 {
-    width: 100vw;
-    margin-left: 30em;
-    color: white;
-
-} */
+#photo2{grid-area: d;}
+#text2{grid-area: e;}
+#button2{grid-area: f;}
 
 
 
 /* responsive */
-
+/* 
 @media screen and (max-width: 1390px) { 
     #iconsports {
         display: flex;
@@ -215,7 +191,7 @@ div #text2 {
         margin-right: auto;
         max-width: 80vw;
     }
-}
+} */
 
     
 

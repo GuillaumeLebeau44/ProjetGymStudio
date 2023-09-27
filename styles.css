@@ -1,13 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #242328;
 }
 
-p {
-    color: white;
+:root {
+
+    --main-color: #242328;
+    --secondary-color: #183d3d;
+    --third-color: #93b1a6;
+
+    --paragraph-color: white;
+    --title-color: white;
+
+    --main-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Nunito Sans', sans-serif;;
 }
 
-h1 {
-    color: white;
-}
+
+

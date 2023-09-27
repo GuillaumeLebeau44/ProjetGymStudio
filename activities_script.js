@@ -1,10 +1,22 @@
 function init() {
+
+    // Lancement de la function Display quand click logo sur page HTML "activities" : 
     document.getElementById("boxPicto").onclick = functionDisplay; // document.getElementById("boxPicto") = correspond à l'objet BoxPicto. On pointe vers la fonction, donc pas de (), sinon ca va l'appeler.
     document.getElementById("cardioPicto").onclick = functionDisplay;
     document.getElementById("musculationPicto").onclick = functionDisplay;
     document.getElementById("yogaPicto").onclick = functionDisplay;
     document.getElementById("aquagymPicto").onclick = functionDisplay;
     document.getElementById("aquabikePicto").onclick = functionDisplay;
+
+
+    // Lancement de la function Display quand click logo sur page HTML "OneCoach" : 
+    document.getElementById("picboxe").onclick = functionDisplay;
+    document.getElementById("piccardio").onclick = functionDisplay;
+    document.getElementById("picmuscu").onclick = functionDisplay;
+    document.getElementById("picyoga").onclick = functionDisplay;
+    document.getElementById("picaquabike").onclick = functionDisplay;
+    document.getElementById("picaquagym").onclick = functionDisplay;
+
 
     function functionDisplay() {
 

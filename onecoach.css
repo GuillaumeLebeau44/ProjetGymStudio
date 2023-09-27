@@ -1,30 +1,35 @@
 * {
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
 }
 
-body{
-background-color: #242328;
+body {
+    background-color: #242328;
 }
 
-#iconsports{
-    display:flex;
+#iconsports {
+    display: flex;
     justify-content: space-around;
-    padding : 50px;
+    padding: 50px;
 }
 
-.piccardio, .picmuscu, .picyoga, .picaquabike, .picaquagym, .picboxe  {
+#piccardio,
+#picmuscu,
+#picyoga,
+#picaquabike,
+#picaquagym,
+#picboxe {
     height: 10vh;
 }
 
 
-h1{
+h1 {
     text-align: center;
     font-size: 3em;
-    margin-bottom:2em ;
-    font-family:'Cormorant Garamond', serif;
+    margin-bottom: 2em;
+    font-family: 'Cormorant Garamond', serif;
     color: white;
 }
 
@@ -33,11 +38,11 @@ h1{
 }
 
 #text {
-    color :white;
+    color: white;
     margin-top: 5em;
     margin-bottom: 10em;
     width: 100%;
- }
+}
 
 
 .photo {
@@ -45,63 +50,63 @@ h1{
     float: left;
     margin-left: 5em;
     margin-right: 10em;
-    max-width : 100vw; 
+    max-width: 100vw;
     height: auto;
 }
 
 h2 {
     margin-bottom: 1em;
-    font-family: 'Nunito Sans', sans-serif ;
-    font-size : 2em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2em;
 }
 
-  
-p{
+
+p {
     margin-bottom: 4em;
-     font-size: 1.7em;
-     font-family: 'Nunito Sans', sans-serif ;
+    font-size: 1.7em;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-#button{
-    display :flex;
+#button {
+    display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
-#button a{
+#button a {
     border-style: solid;
     border-radius: 20px;
-    border-color:  #183D3D ;
+    border-color: #183D3D;
     padding: 12px;
     background-color: #183D3D;
-    width : 40% ;
+    width: 40%;
     text-align: center;
     font-size: 1.5em;
 }
 
 /* responsive */
 
-@media screen and (max-width: 1390px) { 
+@media screen and (max-width: 1390px) {
     #iconsports {
         display: flex;
         flex-wrap: wrap;
     }
 
     h1 {
-        font-size : 2em;
+        font-size: 2em;
     }
 
-    h2{
-        font-size : 1.7em;
+    h2 {
+        font-size: 1.7em;
     }
 
-    #coach{
+    #coach {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #text{
+    #text {
         text-align: center;
     }
 
@@ -127,12 +132,12 @@ p{
     }
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 410px) {
     h1 {
         font-size: 1.5em;
     }
 
-    h2{
+    h2 {
         font-size: 1em;
     }
 
@@ -141,13 +146,11 @@ p{
         margin-bottom: 0;
     }
 
-    p{
+    p {
         font-size: 0.9em;
     }
 
-    #button a{
-        font-size :0.7em;
+    #button a {
+        font-size: 0.7em;
     }
 }
-
-    

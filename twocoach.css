@@ -1,0 +1,110 @@
+/* css commun à toutes les pages */
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+
+}
+
+body{
+background-color: #242328;
+}
+
+#iconsports{
+    display:flex;
+    justify-content: space-around;
+    padding : 50px;
+}
+
+.piccardio, .picmuscu, .picyoga, .picaquabike, .picaquagym, .picboxe  {
+    height: 10vh;
+}
+
+
+
+/* css commun à 2 coach sur la page */
+
+div h1{
+    text-align: center;
+    font-size: 3em;
+    font-family:'Cormorant Garamond', serif;
+    color: white;
+    margin-top: -0.5em;
+}
+
+h2 {
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    margin-top: 1.5em;
+    font-family: 'Nunito Sans', sans-serif ;
+}
+
+p {
+    font-size: 1.7em;
+    font-family: 'Nunito Sans', sans-serif ;
+}
+
+#button {
+    display :flex;
+    justify-content: center;
+}
+
+#button a{
+    border-style: solid;
+    border-radius: 20px;
+    border-color:  #183D3D ;
+    padding: 10px;
+    background-color: #183D3D;
+    width : 25% ;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif ;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+/* css pour chaque coach */
+
+div .photo1 {
+    float: left;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 10%;
+    margin-right: 8em;
+    margin-left: 14em;
+    margin-top: -4em;
+}
+
+
+div #text1 {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        width: 80%;
+        height: 30vh;
+        margin-left: 5em;
+        color: white;
+}
+
+div .photo2{
+    float: right;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 10%;
+    margin-right: 30em;
+    margin-bottom: 5em;
+    margin-top: -2em;
+}
+
+
+
+div #text2 {
+    width: 80%;
+    margin-left: 20em;
+    color: white;
+}
+
+
+/* responsive */
+
+
+

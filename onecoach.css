@@ -1,0 +1,78 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+
+}
+
+body{
+background-color: #242328;
+}
+
+#iconsports{
+    display:flex;
+    justify-content: space-around;
+    padding : 50px;
+}
+
+.piccardio, .picmuscu, .picyoga, .picaquabike, .picaquagym, .picboxe  {
+    height: 10vh;
+}
+
+
+div h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom:2em ;
+    font-family:'Cormorant Garamond', serif;
+    color: white;
+}
+
+#text {
+    color :white;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    width: 80%;
+    line-height: 40px;
+ }
+
+
+.photo {
+    height: 35vh;
+    width: 55vh;
+    border-radius: 10%;
+    float: left;
+    margin-left: 5em;
+    margin-right: 10em;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-family: 'Nunito Sans', sans-serif ;
+}
+
+  
+p{
+    margin-bottom: 4em;
+     font-size: 1.7em;
+     font-family: 'Nunito Sans', sans-serif ;
+}
+
+#button{
+    display :flex;
+    justify-content: flex-start;
+}
+
+#button a{
+    border-style: solid;
+    border-radius: 20px;
+    border-color:  #183D3D ;
+    padding: 12px;
+    background-color: #183D3D;
+    width : 25% ;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* responsive */
+

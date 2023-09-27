@@ -210,13 +210,3 @@ a {
 #coach_button {
     grid-area: f;
 }
-
-/* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
-/* On les "caches" en les décalants */
-.appear {
-    transform: translate(0%, 0%)
-}
-
-.disappear {
-    transform: translate(-110%, 0%)
-}

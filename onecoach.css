@@ -24,18 +24,31 @@ body {
     height: 10vh;
 }
 
+.card_cardio,
+.card_box,
+.card_aquagym,
+.card_aquabike,
+.card_yoga,
+.card_musculation {
+    position: absolute;
+    overflow: hidden;
+    transition: all 1000ms cubic-bezier(.12, .6, .41, 1.20);
+    transition-timing-function: cubic-bezier(.12, .6, .41, 1.20);
+    margin: 0;
+}
+
+
 
 h1 {
     text-align: center;
     font-size: 3em;
-    margin-bottom: 2em;
     font-family: 'Cormorant Garamond', serif;
     color: white;
 }
 
-#coach {
+/* #coach {
     display: block;
-}
+} */
 
 #text {
     color: white;

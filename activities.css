@@ -65,13 +65,14 @@ a{
 #sports_aquabike{ grid-area: l; }
 #icon_sports_aquabike{ grid-area: i; }
 
+
 /** Partie inférieure **/
 
 .sports_text{
     display: grid;
     width: 100%;
     height: 55%;
-    grid-template-columns: repeat(1fr, 1fr, 2fr);
+    grid-template-columns: (1fr, 1fr, 2fr);
     grid-template-rows: (0.5fr, 1fr, 0.5fr, 0.5fr);
     grid-template-areas: 
     "a a b"

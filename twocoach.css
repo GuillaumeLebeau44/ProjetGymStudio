@@ -103,6 +103,11 @@ div #text2 {
     color: white;
 }
 
+.retour {
+    width: 40px;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
 
 /* responsive */
 

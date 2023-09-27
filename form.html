@@ -5,14 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleForm.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menuBurger.js" defer> </script>
     <script src="scriptForm.js"></script>
     <title>Form GymStudio</title>
 </head>
 
 <body>
     <header>
-        <p>Menu Burger</p>
-        <p>logoGymStudio</p>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li><a href="homePage.html">Nos salles</a></li>
+              <li><a href="twocoach.html">Nos coach</a></li>
+              <li><a href="activities.html">Nos sports</a></li>
+              <li><a href="form.html">Réserver</a></li>
+            </ul>
+          </div>
+        
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+        
+          <section id="logo">
+
+            <div>
+              <img src="images/logoGymStudio.png" alt="logo" class="logo">
+            </div>
+        
+          </section>
+          
     </header>
     <section id="formArea">
         <h1>Formulaire de réservation</h1>
@@ -35,6 +61,7 @@
                     <div id="coachName">
                         <label for="coachName">Le Coach</label>
                         <select name="selectCoachName">
+                          <div class= "noms">
                             <option value="noCoachSelected"> </option>
                             <option value="coachBoxe1">Bob - Boxe</option>
                             <option value="coachBoxe2">Laura - Boxe</option>
@@ -45,6 +72,7 @@
                             <option value="coachCardio2">Luc - Cardio</option>
                             <option value="coachAquaGym">Inès - AquaGym</option>
                             <option value="coachYoga">Clémence - Yoga</option>
+                          </div>   
                         </select>
                     </div>
                     <div id="nameClient">
@@ -58,7 +86,7 @@
                 </div>
                 <div id="picCoachForm">
                     <img id="coachFormBox1" src="images/coachBoxOneForm.png">
-                    <!-- <img id="coachFormBox2" src="images/coachBoxTwoForm.jpg">
+                    <!--<img id="coachFormBox2" src="images/coachBoxTwoForm.jpg">
                     <img id="coachFormMuscu1" src="images/coachMusculationForm.jpg">
                     <img id="coachFormMuscu2" src="images/coachMusculationTwoForm.jpg">
                     <img id="coachFormAquaBike" src="images/coachAquaBikeForm.jpg">
@@ -89,7 +117,7 @@
             <p>Accessible directement par la ligne <img class="logoTram" src="images/logoTram.png">.</p>
         </div>
         <div>
-            <img class="planTram" src="images/planArea.png">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2709.9932941954253!2d-1.5494229458553304!3d47.21671351140828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1695816172985!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 

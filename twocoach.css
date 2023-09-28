@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #242328;
+    background-color: var(--main-color);
 }
 
 #iconsports {
@@ -32,7 +32,7 @@ div>h1 {
     text-align: center;
     font-size: 3em;
     font-family: 'Cormorant Garamond', serif;
-    color: white;
+    color: var(--paragraph-color);
 }
 
 h2 {
@@ -50,7 +50,7 @@ p {
     border-style: solid;
     border-radius: 20px;
     border-color: #183D3D;
-    color: white;
+    color: var(--paragraph-color);
     padding: 12px;
     background-color: #183D3D;
     width: 40%;
@@ -107,7 +107,7 @@ div #coach2 {
 
 #text1,
 #text2 {
-    color: white;
+    color: var(--paragraph-color);
 }
 
 #photo1 {

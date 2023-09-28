@@ -13,12 +13,30 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
         rel="stylesheet">
     <script src="onecoach.js"></script>
+    <script src="menuBurger.js" defer> </script>
 </head>
 
 <body onload="init()">
 
     <header>
-        <!-- barre de nav -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="homePage.html">Nos salles</a></li>
+                <li><a href="activities.html">Nos sports</a></li>
+                <li><a href="twocoach.html">Nos coach</a></li>
+                <li><a href="form.html">Réserver</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <img class="logoGymStudio" src="images/logoGymStudio.png">
     </header>
 
     <section>
@@ -202,6 +220,11 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>&copy; <img class="logoGymStudio" src="images/logoGymStudio.png"> </p>
+        <p>Retrouvez-nous sur les réseaux sociaux : <img class="logoX" src="images/logoX.png"> <img class="logoInsta"
+                src="images/logoInsta.png"></p>
+    </footer>
 </body>
 
 </html>

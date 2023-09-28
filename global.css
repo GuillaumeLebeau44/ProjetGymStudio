@@ -100,6 +100,11 @@ footer {
     align-items: center;
     padding: 0 1% 0 1%;
     margin-top: 2%;
+    color: var(--paragraph-color);
+}
+
+.logoGymStudio {
+    width: 5vw;
 }
 
 .logoX:hover,
@@ -107,4 +112,22 @@ footer {
     cursor: pointer;
 }
 
+
+
 /* fin du css footer  */
+
+/* Pour le header */
+
+header {
+    background-color: #183d3d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+}
+
+#openBtn {
+    display: flex;
+    align-items: center;
+}
+
+/* fin du cssheader */

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --main-color: #242328;
+    --secondary-color: #183d3d;
+    --third-color: #93b1a6;
+
+    --paragraph-color: white;
+    --title-color: white;
+
+    --main-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Nunito Sans', sans-serif;
+    ;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: var(--main-color);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--third-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--paragraph-color);
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+/* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
+/* On les "caches" en les décalants */
+
+.appear {
+    transform: translate(0%, 0%)
+}
+
+.disappear {
+    transform: translate(-110%, 0%)
+}
+
+/* pour le footer :  */
+
+.logoX,
+.logoInsta {
+    width: 2vw;
+}
+
+footer {
+    background-color: #183D3D;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1% 0 1%;
+    margin-top: 2%;
+}
+
+.logoX:hover,
+.logoInsta:hover {
+    cursor: pointer;
+}
+
+/* fin du css footer  */

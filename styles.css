@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+
+    --main-color: #242328;
+    --secondary-color: #183d3d;
+    --third-color: #93b1a6;
+
+    --paragraph-color: white;
+    --title-color: white;
+
+    --main-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Nunito Sans', sans-serif;
+    ;
+}
+
+
+.appear {
+    transform: translate(0%, 0%)
+}
+

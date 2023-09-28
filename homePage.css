@@ -5,7 +5,7 @@ body {
 
 #hero div {
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     overflow: hidden;
     border-bottom: solid white 2px;
 }
@@ -17,6 +17,7 @@ body {
 }
 
 #hero {
+    background-color: var(--main-color);
     position: relative;
 }
 
@@ -30,7 +31,7 @@ body {
 
 #openBtn {
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 2%;
 }
 
@@ -179,6 +180,7 @@ button {
 
 @media screen and (max-width: 433px) {
 
+
     h1 {
         position: absolute;
         top: 40%;
@@ -200,3 +202,5 @@ button {
     }
 
 }
+
+

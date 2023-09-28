@@ -4,6 +4,7 @@
 }
 
 :root {
+    /* Les modifs de couleurs,.... appliqués ici s'applique à toutes les pages */
 
     --main-color: #242328;
     --secondary-color: #183d3d;
@@ -15,6 +16,11 @@
     --main-font: 'Cormorant Garamond', serif;
     --paragraph-font: 'Nunito Sans', sans-serif;
     ;
+}
+
+body {
+    /* min-height: 100vh;
+    position: relative; */
 }
 
 /* Sidenav menu */
@@ -99,6 +105,15 @@ footer {
     align-items: center;
     padding: 0 1% 0 1%;
     margin-top: 2%;
+    color: var(--paragraph-color);
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0 */
+}
+
+.logoGymStudio {
+    width: 5vw;
 }
 
 .logoX:hover,
@@ -106,4 +121,22 @@ footer {
     cursor: pointer;
 }
 
+
+
 /* fin du css footer  */
+
+/* Pour le header */
+
+header {
+    background-color: #183d3d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+}
+
+#openBtn {
+    display: flex;
+    align-items: center;
+}
+
+/* fin du cssheader */

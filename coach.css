@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #242328;
+}
+
+#iconsports {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+#piccardio,
+#picmuscu,
+#picyoga,
+#picaquabike,
+#picaquagym,
+#picboxe {
+    height: 10vh;
+}
+
+.card_cardio,
+.card_box,
+.card_aquagym,
+.card_aquabike,
+.card_yoga,
+.card_musculation {
+    position: absolute;
+    overflow: hidden;
+    transition: all 1000ms cubic-bezier(.12, .6, .41, 1.20);
+    transition-timing-function: cubic-bezier(.12, .6, .41, 1.20);
+    margin: 0;
+}
+
+
+h1 {
+    /* text-align: center; */
+    font-size: 3em;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.card_box, .card_musculation, .card_cardio, .card_aquabike, .card_aquagym, .card_yoga {
+    width: 100%;
+    margin: auto;
+}
+
+/* css 2 coach */
+
+div #coach1 {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "a a b"
+        "a a c"
+    ;
+    padding-inline: 15%;
+    padding-top: 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+#photo1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+div #coach2 {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "e d d"
+        "f d d"
+    ;
+    padding-inline: 15%;
+    padding-top: 5%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5em;
+}
+
+#photo2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#button1 a,
+#button2 a {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #183D3D;
+    color: white;
+    padding: 12px;
+    background-color: #183D3D;
+    width: 40%;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+
+#text1,
+#text2 {
+    color: white;
+}
+
+#photo1 {
+    grid-area: a;
+}
+
+#text1 {
+    grid-area: b;
+}
+
+#button1 {
+    grid-area: c;
+}
+
+#photo2 {
+    grid-area: d;
+}
+
+#text2 {
+    grid-area: e;
+}
+
+#button2 {
+    grid-area: f;
+}
+
+
+
+/* css coach unique */
+
+div #coach {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "g g h"
+        "g g i"
+    ;
+    padding-inline: 15%;
+    padding-top: 5%;
+    align-items:start;
+    justify-items: center;
+}
+
+#photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#photo {grid-area: g;}
+#text {grid-area: h;}
+#button {grid-area: i;}
+
+
+#text {
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#button {
+   height: 10vh;
+}
+
+#button a {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #183D3D;
+    padding: 15px;
+    background-color: #183D3D;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* responsive */
+
+@media  screen and (max-width: 1410px){
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    #photo {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    #button a {
+        font-size: 1em;
+    }
+
+    #button1 a,
+#button2 a {
+    font-size: 1em;
+}
+
+}
+    
+
+
+@media screen and (max-width: 910px) {
+    #iconsports {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    div #coach {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #button a {
+        font-size: 1em;
+    }
+
+    div #button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #button1 a,
+    #button2 a {
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 410px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.5em;
+
+    }
+
+    #button a {
+        font-size: 0.3em;
+    }
+
+    #button1 a,
+    #button2 a {
+        font-size: 0.3em;
+        align-items: start;
+        justify-content: start;
+    }
+
+    div #coach1 {
+        padding-inline: 5%;
+        padding-block: 1%;
+        gap: 10px;
+        margin-bottom: 1em;
+    }
+
+    div #coach2 {
+        padding-inline: 5%;
+        padding-block: 1%;
+        gap: 10px;
+    }
+
+    #photo1, #photo2 {
+        align-items: start;
+    }
+}

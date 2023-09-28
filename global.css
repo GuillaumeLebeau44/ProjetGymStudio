@@ -15,6 +15,9 @@
 
     --main-font: 'Cormorant Garamond', serif;
     --paragraph-font: 'Nunito Sans', sans-serif;
+    --title1-size : 2.5em;
+    --title2-size : 1.8em;
+    --paragraph-size : 1.2em;
     ;
 }
 
@@ -106,10 +109,12 @@ footer {
     padding: 0 1% 0 1%;
     margin-top: 2%;
     color: var(--paragraph-color);
+
     /* position: absolute;
     bottom: 0;
     left: 0;
     right: 0 */
+
 }
 
 .logoGymStudio {

@@ -136,26 +136,7 @@ button:hover {
     height: 35vh;
 }
 
-.logoTram,
-.logoX,
-.logoInsta {
-    width: 2vw;
-}
 
-footer {
-    background-color: #183D3D;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 1% 0 1%;
-    margin-top: 2%;
-}
-
-.logoX:hover,
-.logoInsta:hover {
-    cursor: pointer;
-}
 
 @media screen and (min-width: 783px) and (max-width: 1233px) {
     .planTram {

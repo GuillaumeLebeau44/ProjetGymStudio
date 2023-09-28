@@ -1,22 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #242328;
-    color: white;
+    /* background-color: #242328; */
+    background-color: var(--main-color);
+    color: var(--paragraph-color);
     font-size: 1.5rem;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-header {
-    background-color: #183d3d;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1% 0 1%;
-}
 
-.logoGymStudio {
-    width: 5vw;
-}
 
 h1,
 h2 {
@@ -136,26 +128,11 @@ button:hover {
     height: 35vh;
 }
 
-.logoTram,
-.logoX,
-.logoInsta {
+.logoTram {
     width: 2vw;
 }
 
-footer {
-    background-color: #183D3D;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 1% 0 1%;
-    margin-top: 2%;
-}
 
-.logoX:hover,
-.logoInsta:hover {
-    cursor: pointer;
-}
 
 @media screen and (min-width: 783px) and (max-width: 1233px) {
     .planTram {

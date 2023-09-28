@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="twocoach.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/" >
-    <link rel ="preconnect" href="https://fontgstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fontgstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <script src="menuBurger.js" defer> </script>
 </head>
 
 <body>
 
-    <header> 
-<!-- barre de nav -->
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="homePage.html">Nos salles</a></li>
+                <li><a href="activities.html">Nos sports</a></li>
+                <li><a href="twocoach.html">Nos coach</a></li>
+                <li><a href="form.html">Réserver</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <img class="logoGymStudio" src="images/logoGymStudio.png">
     </header>
 
     <section>
-        <div  id="iconsports">
-            <div><a><img src="images/picBoxe.PNG" alt="picboxe" class="picboxe"/></a></div>
-            <div><a><img src="images/picCardio.PNG" alt="piccardio" class="piccardio"/></a></div>
-            <div><a><img src="images/picMuscu.PNG" alt="picmuscu" class="picmuscu"/></a></div>
-            <div><a><img src="images/picYoga.png" alt="picyoga" class="picyoga"/></a></div>
-            <div><a><img src="images/picAquabike.png" alt="picaquabike" class="picaquabike"/></a></div>
-            <div><a><img src="images/picAquagym.png" alt="picaquagym" class="picaquagym"/></a></div>
+        <div id="iconsports">
+            <div><a><img src="images/picBoxe.PNG" alt="picboxe" class="picboxe" /></a></div>
+            <div><a><img src="images/picCardio.PNG" alt="piccardio" class="piccardio" /></a></div>
+            <div><a><img src="images/picMuscu.PNG" alt="picmuscu" class="picmuscu" /></a></div>
+            <div><a><img src="images/picYoga.png" alt="picyoga" class="picyoga" /></a></div>
+            <div><a><img src="images/picAquabike.png" alt="picaquabike" class="picaquabike" /></a></div>
+            <div><a><img src="images/picAquagym.png" alt="picaquagym" class="picaquagym" /></a></div>
         </div>
     </section>
 
-<section>
+    <section>
 
-<!-- <div><h1>NOS COACH BOXE</h1></div> -->
+        <!-- <div><h1>NOS COACH BOXE</h1></div> -->
 
-<!-- <div class="coachboxe">
+        <!-- <div class="coachboxe">
 
     <div id="coach1">
             <div id ="photo1">
@@ -63,7 +84,7 @@
     </div>
 </div> -->
 
-<!-- 
+        <!-- 
 <div><h1>NOS COACH MUSCULATION</h1></div>
 <div class ="coachmuscu">
     <div id="coach1">
@@ -94,9 +115,9 @@
         <div id ="button2"> <a>Réserver avec Thomas</a></div>
     </div>
 </div> -->
-    
 
-<!-- <div><h1>NOS COACH CARDIO</h1></div>
+
+        <!-- <div><h1>NOS COACH CARDIO</h1></div>
 <div class="coachcardio">
     <div id="coach1">  
         <div id="photo1">
@@ -127,7 +148,21 @@
     </div>
 </div>-->
 
+
 </section>
-<script src="coach.js"></script>
+
+<div class="retour">
+    <img src="images/IMG_0492.png" alt="bouton retour" class="retour" onclick="history.back()"/>
+</div>
+    <footer>
+        <p>&copy; <img class="logoGymStudio" src="images/logoGymStudio.png"> </p>
+        <p>Retrouvez-nous sur les réseaux sociaux : <img class="logoX" src="images/logoX.png"> <img class="logoInsta"
+                src="images/logoInsta.png"></p>
+    </footer>
+    <script src="coach.js"></script>
+
+    <script src="menuBurger.js"></script>
+
 </body>
+
 </html>

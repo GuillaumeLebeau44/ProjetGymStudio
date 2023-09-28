@@ -1,15 +1,19 @@
 :root {
-    --primary_color: #242328;
-    --secondary_color: #183D3D;
-    --font_color: #f5f4f4;
+    /* les variables de ce css ont été lié au variable de global ==> pour modifier, merci d'utiliser global.css */
+    --primary_color: var(--main-color);
+    --secondary_color: var(--secondary-color);
+    --font_color: var(--paragraph-color);
     --title_font_size: ;
     --txt_font_size: ;
     --header_font_size: ;
     --padding_between_blocks: 25px;
 }
 
+
+
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -47,8 +51,6 @@ body {
     display: grid;
     width: 100%;
     height: 10%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: (1fr, 0.3fr, 1fr, 0.3fr);
     grid-template-areas:
         "a b c"
         "d e f"
@@ -123,6 +125,9 @@ a {
     grid-area: i;
 }
 
+
+@media screen and (max-width=1024px) {}
+
 /** Partie inférieure **/
 
 .card_boxe,
@@ -133,16 +138,14 @@ a {
 .card_aquabike {
     display: grid;
     width: 100%;
-    height: 55%;
-    grid-template-columns: repeat(1fr, 1fr, 2fr);
-    grid-template-rows: (0.5fr, 1fr, 0.5fr, 0.5fr);
+    height: auto;
     grid-template-areas:
         "a a b"
         "c . b"
         "d . b"
         "e f b";
     gap: 25px;
-    padding-inline: 20%;
+    padding-inline: 15%;
     padding-top: var(--padding_between_blocks);
     position: absolute;
     overflow: hidden;
@@ -155,6 +158,7 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+
 }
 
 #sports_diff>img {
@@ -209,4 +213,14 @@ a {
 
 #coach_button {
     grid-area: f;
+}
+
+/* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
+/* On les "caches" en les décalants */
+.appear {
+    transform: translate(0%, 0%)
+}
+
+.disappear {
+    transform: translate(-110%, 0%)
 }

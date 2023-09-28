@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #242328;
-    color: white;
+    /* background-color: #242328; */
+    background-color: var(--main-color);
+    color: var(--paragraph-color);
     font-size: 1.5rem;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -14,7 +15,12 @@ header {
     padding: 0 1% 0 1%;
 }
 
-h1 {
+.logoGymStudio {
+    width: 5vw;
+}
+
+h1,
+h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 3rem;
     text-align: center;
@@ -64,6 +70,11 @@ h1 {
     width: 15vw;
 }
 
+#infoClients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #coachFormBox1,
 #coachFormBox2,
 #coachFormMuscu1,
@@ -73,14 +84,19 @@ h1 {
 #coachFormCardio2,
 #coachFormAquaGym,
 #coachFormYoga {
-    display: flex;
+    display: none;
     width: 100%;
     border-radius: 25px;
     filter: drop-shadow(15px 15px 4px #183D3D);
 }
 
-#textCommentClient,
-#textAvailableClient {
+#availableClient {
+    padding-right: 10%;
+}
+
+#textAvailableClient,
+#textTelMailClient,
+#textCommentClient {
     width: 100%;
 }
 
@@ -117,29 +133,11 @@ button:hover {
 }
 
 .planTram {
-    width: 20vw;
+    width: 25vw;
+    height: 35vh;
 }
 
-.logoTram,
-.logoX,
-.logoInsta {
-    width: 2vw;
-}
 
-footer {
-    background-color: #183D3D;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 1% 0 1%;
-    margin-top: 2%;
-}
-
-.logoX:hover,
-.logoInsta:hover {
-    cursor: pointer;
-}
 
 @media screen and (min-width: 783px) and (max-width: 1233px) {
     .planTram {
@@ -154,12 +152,33 @@ footer {
         width: 20vw;
     }
 
-    footer {
-        font-size: 1rem;
+    .logoTram,
+    .logoX,
+    .logoInsta {
+        width: 3vw;
+    }
+
+    #sportCoachPic {
+        justify-content: space-around;
     }
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 920px) {
+    #infoClients {
+        justify-content: center;
+        align-content: center;
+    }
+
+    #availableClient {
+        padding-right: 0;
+    }
+
+    #CommentClient {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 582px) and (max-width: 782px) {
     #picCoachForm {
         width: 25vw;
     }
@@ -172,7 +191,40 @@ footer {
         width: 50vw;
     }
 
+    .logoTram,
+    .logoX,
+    .logoInsta {
+        width: 3vw;
+    }
+
     footer {
         font-size: 1rem;
+    }
+
+    #sportCoachPic {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 581px) {
+
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    #sportCoachPic {
+        justify-content: space-around;
+    }
+
+    .logoTram,
+    .logoX,
+    .logoInsta {
+        width: 4vw;
+    }
+
+    .planTram {
+        width: 70vw;
     }
 }

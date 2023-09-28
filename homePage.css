@@ -1,3 +1,7 @@
+body {
+    background-color: var(--main-color);
+}
+
 /* Sidenav menu */
 .sidenav {
     height: 100%;
@@ -6,7 +10,7 @@
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #242328;
+    background-color: var(--main-color);
     padding-top: 60px;
     transition: left 0.5s ease;
 }
@@ -16,13 +20,13 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #93b1a6;
+    color: var(--third-color);
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: white;
+    color: var(--paragraph-color);
 }
 
 .sidenav ul {
@@ -71,10 +75,10 @@
 }
 
 .logo {
-    width: 5%;
+    width: 40px;
     position: absolute;
     top: 1%;
-    left: 93%;
+    right: 2%;
     border-radius: 10px;
 }
 
@@ -89,7 +93,8 @@ h1 {
     top: 40%;
     left: 42%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--paragraph-color);
+    font-family: var(--main-font);
 }
 
 h2 {
@@ -97,7 +102,8 @@ h2 {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--paragraph-color);
+    font-family: var(--main-font);
 }
 
 .flex-container {
@@ -105,53 +111,58 @@ h2 {
     justify-content: space-around;
     padding: 20px;
     text-align: center;
-  }
+}
 
-  p {
+p {
     width: 220px;
     height: 80px;
-    background-color: #183d3d;
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0% 0% 25% 10%;
     padding: .5rem;
-  }
+}
 
-  p1 {
+p1 {
     width: 220px;
     height: 80px;
-    background-color: #183d3d;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color);
+    font-family: var(--paragraph-font);
     font-size: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25% 10% 0% 0%;
     padding: .5rem;
-  }
+}
 
-  .flex-container div img {
+.flex-container div img {
     border-radius: 25% 10%;
-    box-shadow: 4px 1px 1px #93b1a6;
-  }
+    /** box-shadow: 4px 1px 1px #93b1a6; **/
+}
 
-  button {
-    color: white;
-    background-color: #183d3d;
+button {
+    color: var(--paragraph-color);
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
     padding: .5rem 1rem;
     font-weight: bold;
     border-radius: 10px;
-    margin-left: 80%;
+    margin-left: 70%;
     margin-top: 3%;
-  }
+}
 
+@media screen and (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100wv;
+        gap: 2.5rem;
+    }
 
- 
-  
-
-
-
-
-
-
+}

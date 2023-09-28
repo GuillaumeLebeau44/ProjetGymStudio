@@ -7,84 +7,94 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="activities.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="activities_script.js"></script>
+
 </head>
 
-<body onload="hide()">
-    <script src="activities_script.js"></script>
+<body onload="init()">
+
     <nav>
     </nav>
     <main>
 
-
         <section class="sports_buttons">
 
-            <div class="txt_buttons" id="sports_boxe" onclick="show_card_boxe()">
-                <a href="#">Boxe</a>
+            <div id="boxPicto" data-section="box">
+                <div class="icon_buttons" id="icon_sports_boxe">
+                    <a href="#">
+                        <img src="images/picBoxe.PNG" alt="icone_boxe" />
+                    </a>
+                </div>
+                <div class="txt_buttons" id="sports_boxe">
+                    <a href="#">Boxe</a>
+                </div>
             </div>
 
-            <div class="txt_buttons" id="sports_cardio" onclick="show_card_cardio()">
-                <a href="#">Cardio</a>
+            <div id="cardioPicto" data-section="cardio">
+                <div class="icon_buttons" id="icon_sports_cardio">
+                    <a href="#">
+                        <img src="images/picCardio.PNG" alt="icone_cardio" />
+                    </a>
+                </div>
+                <div class="txt_buttons" id="sports_cardio">
+                    <a href="#">Cardio</a>
+                </div>
             </div>
 
-            <div class="txt_buttons" id="sports_musculation" onclick="show_card_musculation()">
-                <a href="#">Musculation</a>
-            </div>
-
-            <div class="txt_buttons" id="sports_yoga" onclick="show_card_yoga()">
-                <a href="#">Yoga</a>
-            </div>
-
-            <div class="txt_buttons" id="sports_aquagym" onclick="show_card_aquagym()">
-                <a href="#">Aquagym</a>
-            </div>
-
-            <div class="txt_buttons" id="sports_aquabike" onclick="show_card_aquabike()">
-                <a href="#">Aquabike</a>
+            <div id="musculationPicto" data-section="musculation">
+                <div class="icon_buttons" id="icon_sports_musculation">
+                    <a href="#">
+                        <img src="images/picMuscu.PNG" alt="icone_musculation" />
+                    </a>
+                </div>
+                <div class="txt_buttons" id="sports_musculation">
+                    <a href="#">Musculation</a>
+                </div>
             </div>
 
 
-            <div class="icon_buttons" id="icon_sports_boxe" onclick="show_card_boxe()">
-                <a href="#">
-                    <img src="images/picBoxe.PNG" alt="icone_boxe" />
-                </a>
+            <div id="yogaPicto" data-section="yoga">
+                <div class="icon_buttons" id="icon_sports_yoga">
+                    <a href="#">
+                        <img src="images/picYoga.png" alt="icone_yoga" />
+                    </a>
+                </div>
+                <div class="txt_buttons" id="sports_yoga">
+                    <a href="#">Yoga</a>
+                </div>
             </div>
 
-            <div class="icon_buttons" id="icon_sports_cardio" onclick="show_card_cardio()">
-                <a href="#">
-                    <img src="images/picCardio.PNG" alt="icone_cardio" />
-                </a>
+            <div id="aquagymPicto" data-section="aquagym">
+                <div class="icon_buttons" id="icon_sports_aquagym">
+                    <a href="#">
+                        <img src="images/picAquaGym.png" alt="icone_aquagym" />
+                    </a>
+                </div>
+                <div class="txt_buttons" id="sports_aquagym">
+                    <a href="#">Aquagym</a>
+                </div>
             </div>
 
-            <div class="icon_buttons" id="icon_sports_musculation" onclick="show_card_musculation()">
-                <a href="#">
-                    <img src="images/picMuscu.PNG" alt="icone_musculation" />
-                </a>
-            </div>
+            <div id="aquabikePicto" data-section="aquabike">
+                <div class="icon_buttons" id="icon_sports_aquabike">
+                    <a href="#">
+                        <img src="images/picAquaBike.png" alt="icone_aquabike" />
+                    </a>
+                </div>
+                <div class="txt_buttons" id="sports_aquabike">
+                    <a href="#">Aquabike</a>
+                </div>
 
-            <div class="icon_buttons" id="icon_sports_yoga" onclick="show_card_yoga()">
-                <a href="#">
-                    <img src="images/picYoga.png" alt="icone_yoga" />
-                </a>
-            </div>
-
-            <div class="icon_buttons" id="icon_sports_aquagym" onclick="show_card_aquagym()">
-                <a href="#">
-                    <img src="images/picAquaGym.png" alt="icone_aquagym" />
-                </a>
-            </div>
-
-            <div class="icon_buttons" id="icon_sports_aquabike" onclick="show_card_aquabike()">
-                <a href="#">
-                    <img src="images/picAquaBike.png" alt="icone_aquabike" />
-                </a>
             </div>
 
         </section>
 
 
-        <section class="sports_text">
 
-            <div class="card_boxe">
+        <section class="sports_text" id="global" data-active="box">
+
+            <div class="card_boxe" id="box">
 
                 <div id="sports_title">
                     <h1>LA BOXE</h1>
@@ -111,7 +121,9 @@
                 </div>
             </div>
 
-            <div class="card_cardio">
+
+            <div class="card_cardio disappear" id="cardio">
+
 
                 <div id="sports_title">
                     <h1>LE CARDIO</h1>
@@ -138,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="card_musculation">
+            <div class="card_musculation disappear" id="musculation">
 
                 <div id="sports_title">
                     <h1>LA MUSCULATION</h1>
@@ -166,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="card_yoga">
+            <div class="card_yoga disappear" id="yoga">
 
                 <div id="sports_title">
                     <h1>LE YOGA</h1>
@@ -194,7 +206,7 @@
                 </div>
             </div>
 
-            <div class="card_aquagym">
+            <div class="card_aquagym disappear" id="aquagym">
 
                 <div id="sports_title">
                     <h1>L'AQUAGYM</h1>
@@ -222,7 +234,9 @@
                 </div>
             </div>
 
-            <div class="card_aquabike">
+
+            <div class="card_aquabike disappear" id="aquabike">
+
 
                 <div id="sports_title">
                     <h1>L'AQUABIKE</h1>
@@ -236,7 +250,7 @@
                 <div id="sports_diff">
                     <img src="images/haltereDiff.PNG" alt="echelle difficulté" />
                 </div>
-                <div class="card_aquabike" id="sports_price">
+                <div id="sports_price">
                     <p>Séance unique : 50€
                         <span style="display: block;">Pack 10 séances : 450€</span>
                     </p>

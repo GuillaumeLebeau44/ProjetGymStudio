@@ -164,7 +164,7 @@ div #coach {
     ;
     padding-inline: 15%;
     padding-top: 5%;
-    align-items: center;
+    align-items:start;
     justify-items: center;
 }
 
@@ -182,8 +182,8 @@ div #coach {
 
 #text {
     color: white;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     width: 100%;
 }
 
@@ -204,11 +204,7 @@ div #coach {
 
 /* responsive */
 
-@media screen and (max-width: 1390px) {
-    #iconsports {
-        display: flex;
-        flex-wrap: wrap;
-    }
+@media  screen and (max-width: 1410px){
 
     h1 {
         font-size: 2em;
@@ -218,54 +214,113 @@ div #coach {
         font-size: 1.7em;
     }
 
-    #coach {
-        display: grid;
-        gap: 20px;
-        grid-template-areas:
-        "g g"
-        "h h"
-        "i i"
-    ;
-        align-items: center;
-        align-items: center;
+    p {
+        font-size: 1.2em;
+    }
+
+    #photo {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    #button a {
+        font-size: 1em;
+    }
+
+    #button1 a,
+#button2 a {
+    font-size: 1em;
+}
+
+}
+    
+
+
+@media screen and (max-width: 910px) {
+    #iconsports {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    div #coach {
+        display: flex;
+        flex-direction: column;
     }
 
     #text {
         text-align: center;
     }
 
-    p {
-        font-size: 1.2em;
-    }
-
-    #button {
-        justify-content: center;
-    }
-
     #button a {
+        font-size: 1em;
+    }
+
+    div #button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #button1 a,
+    #button2 a {
         font-size: 1em;
     }
     
 }
 
-/* @media screen and (max-width: 410px) {
+@media screen and (max-width: 410px) {
     h1 {
         font-size: 1.5em;
+        margin-bottom: 1em;
     }
 
     h2 {
-        font-size: 1em;
-    }
-
-    div #text {
-        margin-top: 1em;
-        margin-bottom: 0;
+        font-size: 0.8em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 0.5em;
+
     }
 
     #button a {
-        font-size: 0.7em;
-    } */
+        font-size: 0.3em;
+    }
+
+    #button1 a,
+    #button2 a {
+        font-size: 0.3em;
+        align-items: start;
+        justify-content: start;
+    }
+
+    div #coach1 {
+        padding-inline: 5%;
+        padding-block: 1%;
+        gap: 10px;
+        margin-bottom: 1em;
+    }
+
+    div #coach2 {
+        padding-inline: 5%;
+        padding-block: 1%;
+        gap: 10px;
+    }
+
+    #photo1, #photo2 {
+        align-items: start;
+    }
+}

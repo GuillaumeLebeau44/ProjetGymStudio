@@ -125,4 +125,9 @@ header {
     padding: 0 1% 0 1%;
 }
 
+#openBtn {
+    display: flex;
+    align-items: center;
+}
+
 /* fin du cssheader */

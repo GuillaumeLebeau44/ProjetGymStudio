@@ -8,6 +8,8 @@ function init() {
     document.getElementById("aquagymPicto").onclick = functionDisplay;
     document.getElementById("aquabikePicto").onclick = functionDisplay;
 
+console.log(document.getElementById("global").dataset.active)
+
     function functionDisplay() {
 
         if (document.getElementById("global").dataset.active != this.dataset.section) {

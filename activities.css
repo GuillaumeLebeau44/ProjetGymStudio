@@ -20,8 +20,10 @@ body {
     background-color: var(--primary_color);
     color: var(--font_color);
     overflow-x: hidden;
+    height: 100vh;
 
 }
+
 
 .sports_buttons>div {
     --b: 0.3em;
@@ -126,8 +128,6 @@ a {
 }
 
 
-@media screen and (max-width=1024px) {}
-
 /** Partie inférieure **/
 
 .card_boxe,
@@ -149,8 +149,8 @@ a {
     padding-top: var(--padding_between_blocks);
     position: absolute;
     overflow: hidden;
-    transition: all 1000ms cubic-bezier(.12, .6, .41, 1.20);
-    transition-timing-function: cubic-bezier(.12, .6, .41, 1.20);
+    transition: all 1000ms cubic-bezier(.12, .6, .41, 1.10);
+    transition-timing-function: cubic-bezier(.12, .6, .41, 1.10);
 }
 
 #sports_illu>img {
@@ -215,12 +215,71 @@ a {
     grid-area: f;
 }
 
-/* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
-/* On les "caches" en les décalants */
-.appear {
-    transform: translate(0%, 0%)
+
+/** Responsive **/
+
+@media screen and (max-width: 1023px){
+
+    .sports_buttons{
+        padding-inline: 15%;
+    }
+
+    #coach_button>a{
+        position: initial;
+    }
+    #coach_button{
+        padding-bottom: 25px;
+    }
+    
+    
+    .card_boxe,
+    .card_cardio,
+    .card_musculation,
+    .card_yoga,
+    .card_aquagym,
+    .card_aquabike {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-areas:
+            "b"
+            "a"
+            "c"
+            "e"
+            "d"
+            "f";
+        gap: 10px;
+        padding-inline: 15%;
+        padding-top: 10px;
+        justify-items: center;
+        text-justify: center;
+        overflow: hidden;
+    }
+
+    #sports_paragraph{
+        text-align: center;
+    }
+
+    #sports_illu{
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
-.disappear {
-    transform: translate(-110%, 0%)
-}
+@media screen and (min-width:300px) and (max-width:650px){
+    .sports_buttons{
+        padding-inline: 10%;  
+        padding-bottom: 25px; 
+    }    
+    .icon_buttons>a>img {
+        object-fit: scale-down;
+        width: 50px;
+        height: 50px;
+    }
+    #sports_diff>img {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+

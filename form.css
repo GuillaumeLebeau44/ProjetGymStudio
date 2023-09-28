@@ -7,16 +7,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-header {
-    background-color: #183d3d;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1% 0 1%;
-}
 
-.logoGymStudio {
-    width: 5vw;
-}
 
 h1,
 h2 {
@@ -134,6 +125,10 @@ button:hover {
 .planTram {
     width: 25vw;
     height: 35vh;
+}
+
+.logoTram {
+    width: 2vw;
 }
 
 

@@ -66,6 +66,7 @@ body {
 a {
     color: var(--font_color);
     text-decoration: none;
+    font-family: var(--paragraph-font);
     font-size: var(--paragraph-size);
 }
 
@@ -199,10 +200,12 @@ p{
 
 #sports_title {
     grid-area: a;
+    font-family: var(--main-font);
 }
 
 #sports_paragraph {
     grid-area: c;
+    font-family: var(--paragraph-font);
 }
 
 #sports_diff {
@@ -211,6 +214,7 @@ p{
 
 #sports_price {
     grid-area: d;
+    font-family: var(--paragraph-font);
 }
 
 #sports_illu {
@@ -287,5 +291,4 @@ p{
         width: 30px;
         height: 30px;
     }
-
-
+}

@@ -17,7 +17,23 @@
 
 <body>
     <header>
-        <p>Menu Burger</p>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="homePage.html">Nos salles</a></li>
+                <li><a href="onecoach.html">Nos coach</a></li>
+                <li><a href="activities.html">Nos sports</a></li>
+                <li><a href="form.html">Réserver</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
         <img class="logoGymStudio" src="images/logoGymStudio.png">
     </header>
 
@@ -115,6 +131,7 @@
                 src="images/logoInsta.png"></p>
     </footer>
     <script src="form.js"></script>
+    <script src="menuBurger.js" defer> </script>
 </body>
 
 </html>

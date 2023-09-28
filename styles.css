@@ -1,13 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #242328;
 }
 
-p {
-    color: white;
+:root {
+
+    --main-color: #242328;
+    --secondary-color: #183d3d;
+    --third-color: #93b1a6;
+
+    --paragraph-color: white;
+    --title-color: white;
+
+    --main-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Nunito Sans', sans-serif;
+    ;
 }
 
-h1 {
-    color: white;
+/* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
+/* On les "caches" en les décalants */
+
+.appear {
+    transform: translate(0%, 0%)
+}
+
+.disappear {
+    transform: translate(-110%, 0%)
 }

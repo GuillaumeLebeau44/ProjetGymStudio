@@ -1,8 +1,7 @@
 body {
     background-color: var(--main-color);
+    overflow-x: hidden;
 }
-
-
 
 #hero div {
     width: 100vw;
@@ -36,7 +35,8 @@ body {
 }
 
 #ourSpaces {
-    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -72,11 +72,12 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
 .flex-container div p {
-    width: 30vw;
+    width: 24vw;
     height: 30%;
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
@@ -86,7 +87,7 @@ h2 {
 }
 
 .flex-container div h3 {
-    width: 30vw;
+    width: 24vw;
     height: 30%;
     background-color: var(--secondary-color);
     color: var(--paragraph-color);
@@ -98,7 +99,7 @@ h2 {
 
 .flex-container div img {
     border-radius: 25% 10%;
-    width: 100%;
+    width: 28vw;
     /** box-shadow: 4px 1px 1px #93b1a6; **/
 }
 
@@ -115,19 +116,51 @@ button {
     display: flex;
     justify-content: flex-end;
     margin-right: 2%;
+    position: absolute;
+    top: 90%;
+    right: 2%;
+
 }
 
 @media screen and (max-width: 768px) {
 
+    .button {
+        position: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    button {
+        width: 80vw;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #ourSpaces {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        margin: auto;
-        width: 80vw;
+        justify-content: center;
+        align-items: center;
         gap: 2.5rem;
     }
 
+
+    #container1,
+    #container2,
+    #container3 {
+        width: 100vw;
+
+        justify-content: center;
+        align-items: center;
+    }
 
     .flex-container div img {
         width: 80vw;
@@ -144,8 +177,26 @@ button {
 
 }
 
+@media screen and (max-width: 433px) {
 
-@media screen and (max-width: 480px) {
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        color: var(--paragraph-color);
+        font-family: var(--main-font);
+        font-size: 1rem;
+    }
 
+    h2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--paragraph-color);
+        font-family: var(--main-font);
+        font-size: 1rem;
+    }
 
 }

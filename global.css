@@ -114,13 +114,13 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 1% 0 1%;
-    margin-top: 2%;
+    /* margin-top:2%; */
     color: var(--paragraph-color);
 
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0 
+    right: 0 */
 
 }
 

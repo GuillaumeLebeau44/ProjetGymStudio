@@ -1,12 +1,12 @@
-// let windowFeatures = "left=400,top=300,width=320,height=200";
-
-// function ouvrirPopup() {
-//     window.open("popupForm.html", "Confirmation d'envoi", windowFeatures);
-// }
+let windowFeatures = "left=400,top=300,width=320,height=200";
 
 function ouvrirPopup() {
-    window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
+    window.open("popupForm.html", "Confirmation d'envoi", windowFeatures);
 }
+
+// function ouvrirPopup() {
+//     window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
+// }
 
 
 // Chande de place la div lié au prénom de l'élève

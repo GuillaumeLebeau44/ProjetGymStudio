@@ -152,3 +152,11 @@ header {
 }
 
 /* fin du cssheader */
+
+/* mise en page du logo navbarre */
+
+.logoGymStudio {
+    width: 40px;
+    margin: 10px;
+    border-radius: 10px;
+}

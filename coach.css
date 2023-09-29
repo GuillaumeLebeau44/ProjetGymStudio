@@ -7,12 +7,14 @@
 
 body {
     background-color: #242328;
+    overflow-y: hidden;
+    min-height: 100vh;
 }
 
 #iconsports {
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding: 15px;
 }
 
 #piccardio,
@@ -39,7 +41,6 @@ body {
 
 
 h1 {
-    /* text-align: center; */
     font-size: var(--title1-size);
     font-family: 'Cormorant Garamond', serif;
     color: white;
@@ -67,6 +68,7 @@ p {
 .card_yoga {
     width: 100%;
     margin: auto;
+    height: 100vh;
 
 }
 
@@ -80,7 +82,7 @@ div #coach1 {
         "a a c"
     ;
     padding-inline: 15%;
-    padding-top: 5%;
+    padding-top: 2%;
     align-items: center;
     justify-items: center;
 }
@@ -100,7 +102,7 @@ div #coach2 {
         "f d d"
     ;
     padding-inline: 15%;
-    padding-top: 5%;
+    padding-top: 2%;
     align-items: center;
     justify-items: center;
     margin-bottom: 5em;
@@ -238,7 +240,7 @@ div #coach {
     }
 
     #button a {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     #button1 a,
@@ -302,23 +304,24 @@ div #coach {
     }
 
     h2 {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     p {
-        font-size: 0.5em;
+        font-size: 0.8em;
 
     }
 
     #button a {
-        font-size: 0.3em;
+        font-size: 0.8em;
     }
 
     #button1 a,
     #button2 a {
-        font-size: 0.3em;
+        font-size: 0.8em;
         align-items: start;
         justify-content: start;
+        padding: 8px;
     }
 
     div #coach1 {

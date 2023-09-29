@@ -6,7 +6,7 @@ const listingActivities = [
         price2: "250 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityBox.jpg",
-        link: "twocoach.html",
+        link: "twocoach.html"
     },
     {
         sportName: "LE CARDIO",
@@ -15,7 +15,7 @@ const listingActivities = [
         price2: "250 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityCardio.webp",
-        link: "twocoach.html",
+        link: "twocoach.html"
     },
     {
         sportName: "LA MUSCULATION",
@@ -24,7 +24,7 @@ const listingActivities = [
         price2: "275 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityMusculation.jpg",
-        link: "twocoach.html",
+        link: "twocoach.html"
     },
     {
         sportName: "LE YOGA",
@@ -33,7 +33,7 @@ const listingActivities = [
         price2: "250 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activtyYoga.jpg",
-        link: "onecoach.html",
+        link: "onecoach.html"
     },
     {
         sportName: "L'AQUAGYM",
@@ -42,7 +42,7 @@ const listingActivities = [
         price2: "Pack 10 séances : 250€",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activity_AquaGym (1).jpg",
-        link: "onecoach.html",
+        link: "onecoach.html"
     },
     {
         sportName: "L'AQUABIKE",
@@ -51,7 +51,7 @@ const listingActivities = [
         price2: "Pack 10 séances : 450€",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityAquaBike.jpg",
-        link: "onecoach.html",
+        link: "onecoach.html"
     }
 
 ];

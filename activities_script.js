@@ -35,3 +35,6 @@ console.log(document.getElementById("global").dataset.active)
 
 }
 
+function load(url, element){
+    fetch(coach.html)
+}

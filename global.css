@@ -19,6 +19,8 @@
 }
 
 body {
+    background-color: var(--main-color);
+    color: var(--paragraph-color);
     /* min-height: 100vh;
     position: relative; */
 }

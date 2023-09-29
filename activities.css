@@ -218,20 +218,21 @@ a {
 
 /** Responsive **/
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
 
-    .sports_buttons{
+    .sports_buttons {
         padding-inline: 15%;
     }
 
-    #coach_button>a{
+    #coach_button>a {
         position: initial;
     }
-    #coach_button{
+
+    #coach_button {
         padding-bottom: 25px;
     }
-    
-    
+
+
     .card_boxe,
     .card_cardio,
     .card_musculation,
@@ -256,30 +257,31 @@ a {
         overflow: hidden;
     }
 
-    #sports_paragraph{
+    #sports_paragraph {
         text-align: center;
     }
 
-    #sports_illu{
+    #sports_illu {
         max-width: 300px;
         max-height: 300px;
     }
 }
 
-@media screen and (min-width:300px) and (max-width:650px){
-    .sports_buttons{
-        padding-inline: 10%;  
-        padding-bottom: 25px; 
-    }    
+@media screen and (min-width:300px) and (max-width:650px) {
+    .sports_buttons {
+        padding-inline: 10%;
+        padding-bottom: 25px;
+    }
+
     .icon_buttons>a>img {
         object-fit: scale-down;
         width: 50px;
         height: 50px;
     }
+
     #sports_diff>img {
         object-fit: cover;
         width: 30px;
         height: 30px;
     }
-
-
+}

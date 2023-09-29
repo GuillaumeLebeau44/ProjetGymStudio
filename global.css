@@ -112,15 +112,15 @@ footer {
     margin-top: 2%;
     color: var(--paragraph-color);
 
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
-    right: 0 */
+    right: 0 
 
 }
 
 .logoGymStudio {
-    width: 5vw;
+    width: 3vw;
 }
 
 .logoX:hover,

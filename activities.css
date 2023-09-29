@@ -129,10 +129,10 @@ a {
 
 /** Partie inférieure **/
 h1 {
- font-size: var(--title2-size);
+    font-size: var(--title2-size);
 }
 
-p{
+p {
     font-size: var(--paragraph-size);
 }
 
@@ -293,5 +293,15 @@ p{
         object-fit: cover;
         width: 30px;
         height: 30px;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    p,
+    a,
+    #coach_button>a {
+        font-size: 0.8em;
     }
 }

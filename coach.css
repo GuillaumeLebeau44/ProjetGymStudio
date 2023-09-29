@@ -59,7 +59,12 @@ p {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.card_box, .card_musculation, .card_cardio, .card_aquabike, .card_aquagym, .card_yoga {
+.card_box,
+.card_musculation,
+.card_cardio,
+.card_aquabike,
+.card_aquagym,
+.card_yoga {
     width: 100%;
     margin: auto;
 }
@@ -164,7 +169,7 @@ div #coach {
     ;
     padding-inline: 15%;
     padding-top: 5%;
-    align-items:start;
+    align-items: start;
     justify-items: center;
 }
 
@@ -175,9 +180,17 @@ div #coach {
     border-radius: 10%;
 }
 
-#photo {grid-area: g;}
-#text {grid-area: h;}
-#button {grid-area: i;}
+#photo {
+    grid-area: g;
+}
+
+#text {
+    grid-area: h;
+}
+
+#button {
+    grid-area: i;
+}
 
 
 #text {
@@ -188,7 +201,7 @@ div #coach {
 }
 
 #button {
-   height: 10vh;
+    height: 10vh;
 }
 
 #button a {
@@ -204,7 +217,7 @@ div #coach {
 
 /* responsive */
 
-@media  screen and (max-width: 1410px){
+@media screen and (max-width: 1410px) {
 
     h1 {
         font-size: 2em;
@@ -228,12 +241,12 @@ div #coach {
     }
 
     #button1 a,
-#button2 a {
-    font-size: 1em;
-}
+    #button2 a {
+        font-size: 1em;
+    }
 
 }
-    
+
 
 
 @media screen and (max-width: 910px) {
@@ -267,7 +280,7 @@ div #coach {
         font-size: 1em;
     }
 
-    div #button{
+    div #button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -278,7 +291,7 @@ div #coach {
     #button2 a {
         font-size: 1em;
     }
-    
+
 }
 
 @media screen and (max-width: 410px) {
@@ -320,7 +333,8 @@ div #coach {
         gap: 10px;
     }
 
-    #photo1, #photo2 {
+    #photo1,
+    #photo2 {
         align-items: start;
     }
 }

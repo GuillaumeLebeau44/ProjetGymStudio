@@ -22,10 +22,15 @@
 }
 
 body {
+<<<<<<< HEAD
+    min-height: 100vh;
+    /* position: relative; */
+=======
     background-color: var(--main-color);
     color: var(--paragraph-color);
     /* min-height: 100vh;
     position: relative; */
+>>>>>>> d676ffd1ed9b67192d781238d033132a51fe1392
 }
 
 /* Sidenav menu */

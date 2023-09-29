@@ -8,7 +8,7 @@ function init() {
     document.getElementById("aquagymPicto").onclick = functionDisplay;
     document.getElementById("aquabikePicto").onclick = functionDisplay;
 
-console.log(document.getElementById("global").dataset.active)
+    console.log(document.getElementById("global").dataset.active)
 
     function functionDisplay() {
 
@@ -33,4 +33,15 @@ console.log(document.getElementById("global").dataset.active)
         }
     }
 
+    const tab = document.getElementsByClassName("buttoncoach")
+    for (let i = 0; i < tab.length; i++) {
+        tab[i].onclick = functionFromActivity
+    }
+
+    function functionFromActivity(e) {
+        // console.log(e)
+
+        result = e.target.dataset.button;
+        localStorage.setItem("sport", result)
+    }
 }

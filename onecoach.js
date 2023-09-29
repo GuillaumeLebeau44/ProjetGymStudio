@@ -1,4 +1,26 @@
+
+
+
 function init() {
+    let sportOrigin = localStorage.getItem("sport");
+    console.log(sportOrigin)
+    // let sportOrigin = localStorage.getItem("sport");
+
+    function functionDisplayFromButtonCoach() {
+        document.getElementById(sportOrigin).classList.add("appear"); // on ajoute la classe appear à l'élément qui a été séléctionné pour le faire apparaitre
+        document.getElementById(sportOrigin).classList.remove("disappear"); // on nettoye son ancienne classe dissappear
+
+        document.getElementById("global").dataset.active = sportOrigin; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
+        // console.log(this.dataset.section);
+    };
+
+    if (sportOrigin == null) {
+        document.getElementById("box").classList.remove("disappear")
+        document.getElementById("box").classList.add("appear")
+    }
+    else {
+        functionDisplayFromButtonCoach();
+    }
 
     // Lancement de la function Display quand click logo sur page HTML "OneCoach" : 
     document.getElementById("picboxe").onclick = functionDisplay;

@@ -294,4 +294,11 @@ p{
         width: 30px;
         height: 30px;
     }
+
+    h1{
+        font-size: 1em;
+    }
+    p, a, #coach_button>a{
+        font-size: 0.8em;
+    }
 }

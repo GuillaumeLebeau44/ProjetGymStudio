@@ -34,4 +34,3 @@ console.log(document.getElementById("global").dataset.active)
     }
 
 }
-

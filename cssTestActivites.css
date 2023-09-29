@@ -20,6 +20,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100vw;
+    min-height: 50vh;
+    transform: translate(0%, 0%);
 }
 
 .cardActivity {
@@ -35,8 +37,10 @@
     padding-inline: 15%;
     padding-top: var(--padding_between_blocks);
     overflow: hidden;
+
     transition: all 1000ms cubic-bezier(.12, .6, .41, 1.10);
     transition-timing-function: cubic-bezier(.12, .6, .41, 1.10);
+
 }
 
 #sports_title {

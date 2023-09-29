@@ -91,8 +91,9 @@ const listingActivities = [
 const cardActivityContainer = document.querySelector(".cardActivityContainer");
 const choiceSport = document.querySelectorAll(".choiceSport")
 
-const generateCardActivities = (e) => {
 
+const generateCardActivities = (e) => {
+    // cardActivityContainer.classList.add("disappear")
     cardActivityContainer.innerHTML = "";
     for (let i = 0; i < listingActivities.length; i++) {
         if (e.target.name === listingActivities[i].sportName) {
@@ -106,7 +107,9 @@ const generateCardActivities = (e) => {
                 listingActivities[i].activityImg,
                 listingActivities[i].link
             );
+
             cardActivityContainer.innerHTML += html;
+            // html.classList.remove("appear")
         }
 
     }

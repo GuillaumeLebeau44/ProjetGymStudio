@@ -1,7 +1,8 @@
 // import createCardActivity from "./cardActivities";
 // import listingActivities from "./listingActivities";
 
-function createCardActivity(sportName, desc, price1, price2, difficulty, activityImg, link) {
+
+function createCardActivity(sportName, desc, price1, price2, difficulty, activityImg, link, data) {
     return `
     <div class="cardActivity">
                 <div id="sports_title">
@@ -22,7 +23,7 @@ function createCardActivity(sportName, desc, price1, price2, difficulty, activit
                     <img src=${activityImg}>
                 </div>
                 <div id="coach_button">
-                    <a href=${link}>Voir les coach</a>
+                    <a href=${link} class= "buttoncoach" data-button=${data}>Voir les coach </a>
                 </div>
             </div>
 
@@ -38,7 +39,8 @@ const listingActivities = [
         price2: "250 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityBox.jpg",
-        link: "twocoach.html"
+        link: "coach.html",
+        data: "box"
     },
     {
         sportName: "LE CARDIO",
@@ -47,7 +49,8 @@ const listingActivities = [
         price2: "250 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityCardio.webp",
-        link: "twocoach.html"
+        link: "coach.html",
+        data: "cardio"
     },
     {
         sportName: "LA MUSCULATION",
@@ -56,7 +59,8 @@ const listingActivities = [
         price2: "275 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityMusculation.jpg",
-        link: "twocoach.html"
+        link: "coach.html",
+        data: "musculation"
     },
     {
         sportName: "LE YOGA",
@@ -65,7 +69,8 @@ const listingActivities = [
         price2: "250 €",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activtyYoga.jpg",
-        link: "onecoach.html"
+        link: "coach.html",
+        data: "yoga"
     },
     {
         sportName: "L'AQUAGYM",
@@ -73,8 +78,9 @@ const listingActivities = [
         price1: "Séance unique : 30€",
         price2: "Pack 10 séances : 250€",
         difficulty: "images/haltereDiff.PNG",
-        activityImg: "images/activity_AquaGym (1).jpg",
-        link: "onecoach.html"
+        activityImg: "images/activity_AquaGym.jpg",
+        link: "coach.html",
+        data: "aquagym"
     },
     {
         sportName: "L'AQUABIKE",
@@ -83,32 +89,56 @@ const listingActivities = [
         price2: "Pack 10 séances : 450€",
         difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityAquaBike.jpg",
-        link: "onecoach.html"
+        link: "coach.html",
+        data: "aquabike"
     }
 
 ];
 
 const cardActivityContainer = document.querySelector(".cardActivityContainer");
+const choiceSport = document.querySelectorAll(".choiceSport")
 
 
-const generateCardActivities = () => {
-
+const generateCardActivities = (e) => {
+    // cardActivityContainer.classList.add("disappear")
     cardActivityContainer.innerHTML = "";
     for (let i = 0; i < listingActivities.length; i++) {
-        const html = createCardActivity(
-            listingActivities[i].sportName,
-            listingActivities[i].desc,
-            listingActivities[i].price1,
-            listingActivities[i].price2,
-            listingActivities[i].difficulty,
-            listingActivities[i].activityImg,
-            listingActivities[i].link
-        );
+        if (e.target.name === listingActivities[i].sportName) {
 
-        cardActivityContainer.innerHTML += html;
+            const html = createCardActivity(
+                listingActivities[i].sportName,
+                listingActivities[i].desc,
+                listingActivities[i].price1,
+                listingActivities[i].price2,
+                listingActivities[i].difficulty,
+                listingActivities[i].activityImg,
+                listingActivities[i].link,
+                listingActivities[i].data
+            );
+
+            cardActivityContainer.innerHTML += html;
+        }
     }
+}
+    ;
+
+for (let k = 0; k < choiceSport.length; k++) {
+    choiceSport[k].addEventListener("click", generateCardActivities);
+}
+
+const tab = document.querySelector(".buttoncoach")
+
+for (let m = 0; m < tab.length; m++) {
+    tab[m].addEventListener("click", functionFromActivity);
+}
 
 
-};
+// for (let i = 0; i < tab.length; i++) {
+//     tab[i].onclick = functionFromActivity
+// }
 
-generateCardActivities();
+function functionFromActivity(e) {
+    // console.log(e)
+    result = e.target.dataset.button;
+    localStorage.setItem("sport", result)
+}

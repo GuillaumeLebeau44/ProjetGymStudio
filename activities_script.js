@@ -32,16 +32,4 @@ function init() {
 
         }
     }
-
-    const tab = document.getElementsByClassName("buttoncoach")
-    for (let i = 0; i < tab.length; i++) {
-        tab[i].onclick = functionFromActivity
-    }
-
-    function functionFromActivity(e) {
-        // console.log(e)
-
-        result = e.target.dataset.button;
-        localStorage.setItem("sport", result)
-    }
 }

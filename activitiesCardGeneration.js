@@ -73,7 +73,7 @@ const listingActivities = [
         price1: "Séance unique : 30€",
         price2: "Pack 10 séances : 250€",
         difficulty: "images/haltereDiff.PNG",
-        activityImg: "images/activity_AquaGym (1).jpg",
+        activityImg: "images/activity_AquaGym.jpg",
         link: "onecoach.html"
     },
     {
@@ -89,26 +89,30 @@ const listingActivities = [
 ];
 
 const cardActivityContainer = document.querySelector(".cardActivityContainer");
+const choiceSport = document.querySelectorAll(".choiceSport")
 
-
-const generateCardActivities = () => {
+const generateCardActivities = (e) => {
 
     cardActivityContainer.innerHTML = "";
     for (let i = 0; i < listingActivities.length; i++) {
-        const html = createCardActivity(
-            listingActivities[i].sportName,
-            listingActivities[i].desc,
-            listingActivities[i].price1,
-            listingActivities[i].price2,
-            listingActivities[i].difficulty,
-            listingActivities[i].activityImg,
-            listingActivities[i].link
-        );
+        if (e.target.name === listingActivities[i].sportName) {
 
-        cardActivityContainer.innerHTML += html;
+            const html = createCardActivity(
+                listingActivities[i].sportName,
+                listingActivities[i].desc,
+                listingActivities[i].price1,
+                listingActivities[i].price2,
+                listingActivities[i].difficulty,
+                listingActivities[i].activityImg,
+                listingActivities[i].link
+            );
+            cardActivityContainer.innerHTML += html;
+        }
+
     }
+}
+    ;
 
-
-};
-
-generateCardActivities();
+for (let k = 0; k < choiceSport.length; k++) {
+    choiceSport[k].addEventListener("click", generateCardActivities);
+}

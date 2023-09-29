@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="homePage.html">Nos salles</a></li>
                 <li><a href="activities.html">Nos sports</a></li>
-                <li><a href="twocoach.html">Nos coach</a></li>
+                <li><a href="coach.html">Nos coach</a></li>
                 <li><a href="form.html">Réserver</a></li>
             </ul>
         </div>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div id="cardioPicto" data-section="cardio">
+        <div id="cardioPicto" data-section="cardio" data-active="cardio">
             <div class="icon_buttons" id="icon_sports_cardio">
                 <a href="#">
                     <img src="images/picCardio.PNG" alt="icone_cardio" />
@@ -135,7 +135,7 @@
                 <img src="images/activityBox.jpg" alt="illustration boxe" />
             </div>
             <div id="coach_button">
-                <a href="coach.html">Voir les coach</a>
+                <a href="coach.html" class="buttoncoach" data-button="box">Voir les coach</a>
             </div>
         </div>
 
@@ -164,7 +164,7 @@
                 <img src="images/activityCardio.webp" alt="illustration cardio" />
             </div>
             <div id="coach_button">
-                <a href="coach.html">Voir les coach</a>
+                <a class="buttoncoach" href="coach.html" data-button="cardio">Voir les coach</a>
             </div>
         </div>
 
@@ -192,7 +192,7 @@
                 <img src="images/activityMusculation.jpg" alt="illustration musculation" />
             </div>
             <div id="coach_button">
-                <a href="coach.html">Voir les coach</a>
+                <a href="coach.html" class="buttoncoach" data-button="musculation">Voir les coach</a>
             </div>
         </div>
 
@@ -220,7 +220,7 @@
                 <img src="images/activtyYoga.jpg" alt="illustration yoga" />
             </div>
             <div id="coach_button">
-                <a href="coach.html">Voir les coach</a>
+                <a href="coach.html" class="buttoncoach" data-button="yoga">Voir les coach</a>
             </div>
         </div>
 
@@ -248,12 +248,12 @@
                 <img src="images/activity_AquaGym (1).jpg" alt="illustration aquagym" />
             </div>
             <div id="coach_button">
-                <a href="coach.html">Voir les coach</a>
+                <a href="coach.html" class="buttoncoach">Voir les coach</a>
             </div>
         </div>
 
 
-        <div class="card_aquabike disappear" id="aquabike">
+        <div class="card_aquabike disappear" id="aquabike" data-button="aquabike">
 
 
             <div id="sports_title">
@@ -277,7 +277,7 @@
                 <img src="images/activityAquaBike.jpg" alt="illustration aquabike" />
             </div>
             <div id="coach_button">
-                <a href="coach.html">Voir les coach</a>
+                <a href="coach.html" class="buttoncoach" data-button="aquabike">Voir les coach</a>
             </div>
         </div>
     </section>

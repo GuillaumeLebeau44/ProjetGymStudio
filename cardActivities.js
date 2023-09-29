@@ -1,6 +1,6 @@
 function createCardActivity(sportName, desc, price1, price2, difficulty, activityImg, link) {
     return `
-    <div class="card_boxe" id="box">
+    <div class="cardActivity">
                 <div id="sports_title">
                     <h1>${sportName}</h1>
                 </div>
@@ -23,17 +23,12 @@ function createCardActivity(sportName, desc, price1, price2, difficulty, activit
                 </div>
             </div>
     
-    
-    
-    
-    
-    
     `
         ;
 }
 
 
-export default createCardActivity
+export default createCardActivity;
 
 
 

@@ -21,15 +21,17 @@
     ;
 }
 
-/* body {
-    min-height: 100%;
-    position:relative;
-    padding-bottom: 100px;
-} */
-
-
-
-
+body {
+<<<<<<< HEAD
+    min-height: 100vh;
+    /* position: relative; */
+=======
+    background-color: var(--main-color);
+    color: var(--paragraph-color);
+    /* min-height: 100vh;
+    position: relative; */
+>>>>>>> d676ffd1ed9b67192d781238d033132a51fe1392
+}
 
 /* Sidenav menu */
 .sidenav {
@@ -114,15 +116,16 @@ footer {
     padding: 0 1% 0 1%;
     /* margin-top:2%; */
     color: var(--paragraph-color);
+
+    /* position: absolute;
     bottom: 0;
-    position: absolute;
-    width: 100%;
-    height: 100px;
+    left: 0;
+    right: 0 */
 
 }
 
 .logoGymStudio {
-    width: 5vw;
+    width: 3vw;
 }
 
 .logoX:hover,
@@ -149,3 +152,11 @@ header {
 }
 
 /* fin du cssheader */
+
+/* mise en page du logo navbarre */
+
+.logoGymStudio {
+    width: 40px;
+    margin: 10px;
+    border-radius: 10px;
+}

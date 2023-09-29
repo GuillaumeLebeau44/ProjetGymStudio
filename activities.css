@@ -3,9 +3,6 @@
     --primary_color: var(--main-color);
     --secondary_color: var(--secondary-color);
     --font_color: var(--paragraph-color);
-    --title_font_size: ;
-    --txt_font_size: ;
-    --header_font_size: ;
     --padding_between_blocks: 25px;
 }
 
@@ -69,6 +66,8 @@ body {
 a {
     color: var(--font_color);
     text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-size);
 }
 
 .icon_buttons>a>img {
@@ -129,6 +128,13 @@ a {
 
 
 /** Partie inférieure **/
+h1 {
+    font-size: var(--title2-size);
+}
+
+p {
+    font-size: var(--paragraph-size);
+}
 
 .card_boxe,
 .card_cardio,
@@ -185,6 +191,7 @@ a {
     bottom: 0;
     right: 0;
     white-space: nowrap;
+    font-size: var(--paragraph-size);
 }
 
 
@@ -193,10 +200,12 @@ a {
 
 #sports_title {
     grid-area: a;
+    font-family: var(--main-font);
 }
 
 #sports_paragraph {
     grid-area: c;
+    font-family: var(--paragraph-font);
 }
 
 #sports_diff {
@@ -205,6 +214,7 @@ a {
 
 #sports_price {
     grid-area: d;
+    font-family: var(--paragraph-font);
 }
 
 #sports_illu {
@@ -218,20 +228,21 @@ a {
 
 /** Responsive **/
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
 
-    .sports_buttons{
+    .sports_buttons {
         padding-inline: 15%;
     }
 
-    #coach_button>a{
+    #coach_button>a {
         position: initial;
     }
-    #coach_button{
+
+    #coach_button {
         padding-bottom: 25px;
     }
-    
-    
+
+
     .card_boxe,
     .card_cardio,
     .card_musculation,
@@ -256,30 +267,41 @@ a {
         overflow: hidden;
     }
 
-    #sports_paragraph{
+    #sports_paragraph {
         text-align: center;
     }
 
-    #sports_illu{
+    #sports_illu {
         max-width: 300px;
         max-height: 300px;
     }
 }
 
-@media screen and (min-width:300px) and (max-width:650px){
-    .sports_buttons{
-        padding-inline: 10%;  
-        padding-bottom: 25px; 
-    }    
+@media screen and (min-width:300px) and (max-width:650px) {
+    .sports_buttons {
+        padding-inline: 10%;
+        padding-bottom: 25px;
+    }
+
     .icon_buttons>a>img {
         object-fit: scale-down;
         width: 50px;
         height: 50px;
     }
+
     #sports_diff>img {
         object-fit: cover;
         width: 30px;
         height: 30px;
     }
 
+    h1 {
+        font-size: 1em;
+    }
 
+    p,
+    a,
+    #coach_button>a {
+        font-size: 0.8em;
+    }
+}

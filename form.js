@@ -5,7 +5,7 @@
 // }
 
 function ouvrirPopup() {
-    window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
+    alert('Votre message a bien été envoyé. Notre équipe vous recontactera dans les meilleurs délais.')
 }
 
 

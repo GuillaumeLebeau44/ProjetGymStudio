@@ -1,11 +1,15 @@
-// let windowFeatures = "left=400,top=300,width=320,height=200";
+let windowFeatures = "left=400,top=300,width=320,height=200";
+
+function ouvrirPopup() {
+    window.open("popupForm.html", "Confirmation d'envoi", windowFeatures);
+}
 
 // function ouvrirPopup() {
-//     window.open("popupForm.html", "Confirmation d'envoi", windowFeatures);
+//     window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
 // }
 
 function ouvrirPopup() {
-    alert('Votre message a bien été envoyé. Notre équipe vous recontactera dans les meilleurs délais.')
+    window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
 }
 
 

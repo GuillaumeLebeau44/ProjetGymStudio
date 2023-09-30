@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     width: 100vw;
     min-height: 50vh;
-    transform: translate(0%, 0%);
+
 }
 
 .cardActivity {
@@ -37,11 +37,27 @@
     padding-inline: 15%;
     padding-top: var(--padding_between_blocks);
     overflow: hidden;
-
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    /* transform: translate (-110%, 0%);
     transition: all 1000ms cubic-bezier(.12, .6, .41, 1.10);
     transition-timing-function: cubic-bezier(.12, .6, .41, 1.10);
-
+    transform: translate (0%, 0%); */
 }
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
 
 #sports_title {
     grid-area: a;
@@ -184,4 +200,24 @@ a {
 
 #icon_sports_aquabike {
     grid-area: i;
+}
+
+.sports_buttons>div {
+    --b: 0.3em;
+    /* the thickness of the line */
+    --c: #F0F2F4;
+    /* the color */
+    color: #0000;
+    padding-block: var(--b);
+    background:
+        linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+.sports_buttons>div:hover {
+    --_p: 100%;
+    --_s: .3s;
 }

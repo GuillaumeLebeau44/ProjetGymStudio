@@ -121,18 +121,18 @@ div #coach2 {
 }
 
 #button1_cardio,
-#button2_cardio, #button1_boxe, #button2_boxe, #button1_muscu, #button2_muscu {
-    border-style: solid;
+#button2_cardio, #button1_boxe, #button2_boxe, #button1_muscu, #button2_muscu{
     border-radius: 20px;
-    border-color: #183D3D;
-    color: white;
+    /* border-color:var(--secondary-color); */
     padding: 12px;
-    background-color: #183D3D;
-    width: 40%;
+    background-color: var(--secondary-color);
+    width: 50%;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
     font-size: var(--paragraph-size);
 }
+
 
 
 #text1,
@@ -314,6 +314,11 @@ div #coach {
         width: 100%;
     }
 
+    #button1_cardio a,
+#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a {
+        font-size: 0.8em;
+    }
+
 }
 
 @media screen and (max-width: 410px) {
@@ -353,12 +358,13 @@ div #coach {
         font-size: 0.8em;
     }
 
-    #button1_cardio a,
-    #button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a {
+    #button1_cardio,
+    #button2_cardio, #button1_boxe, #button2_boxe, #button1_muscu, #button2_muscu {
         font-size: 0.8em;
         align-items: center;
-        justify-content: center;
-        padding: 8px;
+        justify-items: center;
+        padding: 2px;
+        width: 100%;
     }
 
     div #coach1 {

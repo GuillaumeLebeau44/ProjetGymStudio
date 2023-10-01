@@ -26,8 +26,6 @@ body {
     position: relative;
     background-color: var(--main-color);
     color: var(--paragraph-color);
-    /* min-height: 100vh;
-    position: relative; */
 }
 
 /* Sidenav menu */
@@ -111,7 +109,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 1% 0 1%;
-    margin-top:2%;
+    margin-top:5%;
     color: var(--paragraph-color);
     position: absolute;
     bottom: 0;

@@ -1,6 +1,13 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-color: var(--main-color);
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
 }
 
 #hero div {
@@ -79,10 +86,11 @@ h2 {
 
 .flex-container div p {
     width: 24vw;
-    height: 30%;
+    height: 20%;
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
+    font-size: var(--paragraph-size);
     border-radius: 0% 0% 25% 10%;
     padding: .5rem;
 }
@@ -100,7 +108,9 @@ h2 {
 
 .flex-container div img {
     border-radius: 25% 10%;
-    width: 28vw;
+    width: 22vw;
+    margin-top: -2em;
+    margin-bottom: 0.5em;
     /** box-shadow: 4px 1px 1px #93b1a6; **/
 }
 
@@ -154,7 +164,6 @@ button {
     #container2,
     #container3 {
         width: 100vw;
-
         justify-content: center;
         align-items: center;
     }
@@ -166,6 +175,7 @@ button {
 
     .flex-container div p {
         width: 76vw;
+        font-size: 0.8em;
     }
 
     .flex-container div h3 {
@@ -195,6 +205,10 @@ button {
         color: var(--paragraph-color);
         font-family: var(--main-font);
         font-size: 1rem;
+    }
+
+    body{
+        overflow: auto;
     }
 
 }

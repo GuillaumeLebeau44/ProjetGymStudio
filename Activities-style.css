@@ -143,7 +143,6 @@ a {
     color: var(--font_color);
     text-decoration: none;
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
 }
 
 .icon_buttons>a>img {

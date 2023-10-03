@@ -33,7 +33,7 @@ function createCardActivity(sportName, desc, price1, price2, difficulty, activit
 
 const listingActivities = [
     {
-        sportName: "LA BOXE",
+        sportName: "LABOXE",
         desc: "La boxe est un sport dynamique qui présente des atouts pour la forme et le mental. Elle permet d'améliorer le cardio vasculaire, l'endurance et la respiration. La boxe fait par conséquent travailler la respiration, l'endurance, l'équilibre et la force.",
         price1: "30 €",
         price2: "250 €",
@@ -43,7 +43,7 @@ const listingActivities = [
         data: "box"
     },
     {
-        sportName: "LE CARDIO",
+        sportName: "LECARDIO",
         desc: "Le cardio training est une forme d'activité physique rythmique qui permet d'augmenter votre fréquence cardiaque dans votre zone cible de fréquence cardiaque. C'est dans cette zone que votre corps brûle le plus de graisses et de calories.",
         price1: "30 €",
         price2: "250 €",
@@ -53,7 +53,7 @@ const listingActivities = [
         data: "cardio"
     },
     {
-        sportName: "LA MUSCULATION",
+        sportName: "LAMUSCULATION",
         desc: "La musculation vise au développement des muscles squelettiques, pratiquée dans le but d'acquérir plus de force, d'endurance ou de volume musculaire. Les bienfaits sont notables, un bon régime d'entrainement physique a été prouvé comme étant bénéfique pour la santé physique et mentale.",
         price1: "30 €",
         price2: "275 €",
@@ -63,7 +63,7 @@ const listingActivities = [
         data: "musculation"
     },
     {
-        sportName: "LE YOGA",
+        sportName: "LEYOGA",
         desc: "Le yoga est une pratique qui nous vient de l'Inde et qui apporte un équilibre entre le corps, le mental et le spirituel.Le yoga permet d'améliorer sa force, sa souplesse et son équilibre en reforçant les muscles profonds. Lorsqu'il est pratiqué régulièrment il permet d'améliorer sa santé et sa vitalité.",
         price1: "30 €",
         price2: "250 €",
@@ -103,7 +103,7 @@ const generateCardActivities = (e) => {
     // cardActivityContainer.classList.add("disappear")
     cardActivityContainer.innerHTML = "";
     for (let i = 0; i < listingActivities.length; i++) {
-        if (e.target.name === listingActivities[i].sportName) {
+        if (e.target.id === listingActivities[i].sportName) {
 
             const html = createCardActivity(
                 listingActivities[i].sportName,
@@ -138,7 +138,7 @@ for (let m = 0; m < tab.length; m++) {
 // }
 
 function functionFromActivity(e) {
-    // console.log(e)
+    console.log(e)
     result = e.target.dataset.button;
     localStorage.setItem("sport", result)
 }

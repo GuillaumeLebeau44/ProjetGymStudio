@@ -110,14 +110,12 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 1% 0 1%;
-    margin-top:5%;
+    margin-top: 5%;
     color: var(--paragraph-color);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0
-
-
 }
 
 .logoGymStudio {
@@ -159,19 +157,30 @@ header {
 
 
 
-@media screen and (max-width: 410px){
-footer {
-    margin-top: 0;
-}
+@media screen and (max-width: 410px) {
 
-.logoX,
-.logoInsta {
-    width: 1vw;
-}
+    /* mise en page footer */
 
-.logoGymStudio {
-    width: 2vw;
-}
+    footer {
+        margin-top: 0;
+    }
+
+    .logoX,
+    .logoInsta {
+        width: 1vw;
+    }
+
+    .logoGymStudio {
+        width: 2vw;
+    }
+
+    /* Taille de police */
+
+    :root {
+        --title1-size: 2.2em;
+        --title2-size: 1.8em;
+        --paragraph-size: 1.2em;
+    }
 
 /* :root{
     --title1-size: 2.2em;

@@ -75,7 +75,7 @@ p {
 
 /* css 2 coach */
 
-div #coach1 {
+div .coach1 {
     display: grid;
     width:100%;
     gap: 25px;
@@ -90,14 +90,14 @@ div #coach1 {
     justify-items: center;
 }
 
-#photo1 img {
+.photo1 img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 10%;
 }
 
-div #coach2 {
+div .coach2 {
     display: grid;
     width:100%;
     gap: 25px;
@@ -113,7 +113,7 @@ div #coach2 {
     /* margin-bottom: 2em; */
 }
 
-#photo2 img {
+.photo2 img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -136,16 +136,16 @@ div #coach2 {
 
 
 
-#text1,
-#text2 {
+.text1,
+.text2 {
     color: white;
 }
 
-#photo1 {
+.photo1 {
     grid-area: a;
 }
 
-#text1 {
+.text1 {
     grid-area: b;
 }
 
@@ -153,15 +153,15 @@ div #coach2 {
     grid-area: c;
 }
 
-#photo2 {
+.photo2 {
     grid-area: d;
 }
 
-#text2 {
+.text2 {
     grid-area: e;
 }
 
-#button2 {
+.button2 {
     grid-area: f;
 }
 
@@ -169,7 +169,7 @@ div #coach2 {
 
 /* css coach unique */
 
-div #coach {
+div .coach {
     display: grid;
     width:100vw;
     gap: 25px;
@@ -185,18 +185,18 @@ div #coach {
     justify-items: center;
 }
 
-#photo img {
+.photo img {
     object-fit: cover;
     width: 80%;
     height: 80%;
     border-radius: 10%;
 }
 
-#photo {
+.photo {
     grid-area: g;
 }
 
-#text {
+.text {
     grid-area: h;
 }
 
@@ -205,7 +205,7 @@ div #coach {
 }
 
 
-#text {
+.text {
     color: white;
     margin-top: 1em;
     margin-bottom:0;
@@ -244,7 +244,7 @@ div #coach {
         font-size: 1.2em;
     }
 
-    #photo {
+    .photo {
         width: 100%;
         object-fit: fill;
     }
@@ -258,7 +258,7 @@ div #coach {
         font-size: 1em;
     }
 
-    div #coach1, div #coach2 {
+    div .coach1, div .coach2 {
         padding-inline: 5%;
         gap:10px;
         align-items: start;
@@ -287,19 +287,19 @@ div #coach {
         font-size: 1em;
     }
 
-    div #coach {
+    div .coach {
         display: flex;
         flex-direction: column;
         gap: 0;
         padding-top: 0.5em;
     }
 
-    div #photo {
+    div .photo {
         width: 100%;
     }
 
 
-    #photo{
+    .photo{
         width: 60%;
         height: 60%;
         justify-content: center;
@@ -307,7 +307,7 @@ div #coach {
         align-items: center;
     }
 
-    #text {
+    .text {
         text-align: center;
     }
 
@@ -376,21 +376,21 @@ div #coach {
         width: 100%;
     }
 
-    div #coach1 {
+    div .coach1 {
         padding-inline: 5%;
         padding-block: 1%;
         gap: 10px;
         margin-bottom: 1em;
     }
 
-    div #coach2 {
+    div .coach2 {
         padding-inline: 5%;
         padding-block: 1%;
         gap: 10px;
     }
 
-    #photo1,
-    #photo2 {
+    .photo1,
+    .photo2 {
         align-items: start;
     }
 }

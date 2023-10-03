@@ -86,22 +86,22 @@ h2 {
 
 .flex-container div p {
     width: 24vw;
-    height: 20%;
+    /* height: 20%; */
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
-    font-size: var(--paragraph-size);
+    /* font-size: var(--paragraph-size); */
     border-radius: 0% 0% 25% 10%;
     padding: .5rem;
 }
 
 .flex-container div h3 {
     width: 24vw;
-    height: 30%;
+    /* height: 30%; */
     background-color: var(--secondary-color);
     color: var(--paragraph-color);
     font-family: var(--paragraph-font);
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     border-radius: 25% 10% 0% 0%;
     padding: .5rem;
 }
@@ -141,7 +141,7 @@ button {
 
     button {
         width: 80vw;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         font-weight: bold;
     }
 
@@ -175,7 +175,7 @@ button {
 
     .flex-container div p {
         width: 76vw;
-        font-size: 0.8em;
+        /* font-size: 0.8em; */
     }
 
     .flex-container div h3 {
@@ -194,7 +194,7 @@ button {
         transform: translate(-50%, -50%);
         color: var(--paragraph-color);
         font-family: var(--main-font);
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     h2 {
@@ -204,7 +204,7 @@ button {
         transform: translate(-50%, -50%);
         color: var(--paragraph-color);
         font-family: var(--main-font);
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     body{

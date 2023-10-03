@@ -57,7 +57,6 @@ h2 {
 
 p {
     margin-bottom: 1em;
-    font-size: var(--paragraph-size);
     font-family: var(--paragraph-font);
 }
 
@@ -130,7 +129,7 @@ div .coach2 {
     text-align: center;
     color: var(--paragaph-color);
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
+    /* font-size: var(--paragraph-size); */
     text-decoration: none;
 }
 

@@ -7,7 +7,7 @@
 
 body {
     background-color: #242328;
-    overflow-y: hidden;
+    overflow: hidden;
     min-height: 100vh;
 }
 
@@ -23,7 +23,8 @@ body {
 #picaquabike,
 #picaquagym,
 #picboxe {
-    height: 10vh;
+    height: 75px;
+    width: 75px;
 }
 
 .card_cardio,
@@ -42,7 +43,7 @@ body {
 
 h1 {
     font-size: var(--title1-size);
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--main-font);
     color: white;
     display: flex;
     justify-content: center;
@@ -50,14 +51,14 @@ h1 {
 
 h2 {
     margin-bottom: 1em;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--main-font);
     font-size: var(--title2-size);
 }
 
 p {
     margin-bottom: 1em;
     font-size: var(--paragraph-size);
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--paragraph-font);
 }
 
 .card_box,
@@ -76,13 +77,15 @@ p {
 
 div #coach1 {
     display: grid;
-    gap: 20px;
+    width:100%;
+    gap: 25px;
+    height: auto;
     grid-template-areas:
         "a a b"
         "a a c"
     ;
     padding-inline: 15%;
-    padding-top: 2%;
+    padding-top: 0.5em;
     align-items: center;
     justify-items: center;
 }
@@ -96,16 +99,18 @@ div #coach1 {
 
 div #coach2 {
     display: grid;
-    gap: 20px;
+    width:100%;
+    gap: 25px;
+    height: auto;
     grid-template-areas:
         "e d d"
         "f d d"
     ;
     padding-inline: 15%;
-    padding-top: 2%;
+    padding-top: 0.5em;
     align-items: center;
     justify-items: center;
-    margin-bottom: 5em;
+    /* margin-bottom: 2em; */
 }
 
 #photo2 img {
@@ -115,19 +120,20 @@ div #coach2 {
     border-radius: 10%;
 }
 
-#button1 a,
-#button2 a {
-    border-style: solid;
+#button1_cardio a,
+#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a{
     border-radius: 20px;
-    border-color: #183D3D;
-    color: white;
+    /* border-color:var(--secondary-color); */
     padding: 12px;
-    background-color: #183D3D;
-    width: 40%;
+    background-color: var(--secondary-color);
+    width: 50%;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+    color: var(--paragaph-color);
+    font-family: var(--paragraph-font);
     font-size: var(--paragraph-size);
+    text-decoration: none;
 }
+
 
 
 #text1,
@@ -143,7 +149,7 @@ div #coach2 {
     grid-area: b;
 }
 
-#button1 {
+#button1_cardio, #button1_muscu, #button1_boxe {
     grid-area: c;
 }
 
@@ -165,21 +171,24 @@ div #coach2 {
 
 div #coach {
     display: grid;
-    gap: 20px;
+    width:100vw;
+    gap: 25px;
+    height: auto;
     grid-template-areas:
-        "g g h"
-        "g g i"
+        "g  h"
+        "g  i"
     ;
     padding-inline: 15%;
-    padding-top: 5%;
+    padding-top: 3em;
+    padding-bottom: 2em;
     align-items: start;
     justify-items: center;
 }
 
 #photo img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border-radius: 10%;
 }
 
@@ -191,7 +200,7 @@ div #coach {
     grid-area: h;
 }
 
-#button {
+#button_aquagym, #button_aquabike, #button_yoga {
     grid-area: i;
 }
 
@@ -199,15 +208,15 @@ div #coach {
 #text {
     color: white;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom:0;
     width: 100%;
 }
 
-#button {
+#button_aquagym, #button_aquabike, #button_yoga {
     height: 10vh;
 }
 
-#button a {
+#button_aquagym a, #button_aquabike a, #button_yoga a {
     border-style: solid;
     border-radius: 20px;
     border-color: #183D3D;
@@ -216,6 +225,7 @@ div #coach {
     text-align: center;
     font-size: var(--paragraph-size);
     color: white;
+    text-decoration: none;
 }
 
 /* responsive */
@@ -239,14 +249,21 @@ div #coach {
         object-fit: fill;
     }
 
-    #button a {
+    #button_aquagym a, #button_aquabike a, #button_yoga a {
         font-size: 1.2em;
     }
 
-    #button1 a,
-    #button2 a {
+    #button1_cardio a,
+#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a {
         font-size: 1em;
     }
+
+    div #coach1, div #coach2 {
+        padding-inline: 5%;
+        gap:10px;
+        align-items: start;
+    }
+
 
 }
 
@@ -273,31 +290,65 @@ div #coach {
     div #coach {
         display: flex;
         flex-direction: column;
+        gap: 0;
+        padding-top: 0.5em;
+    }
+
+    div #photo {
+        width: 100%;
+    }
+
+
+    #photo{
+        width: 60%;
+        height: 60%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     #text {
         text-align: center;
     }
 
-    #button a {
+    #button_aquagym a, #button_aquabike a, #button_yoga a  {
         font-size: 1em;
+        margin-top: 0;
     }
 
-    div #button {
+    div #button_aquagym, div #button_aquabike, div #button_yoga {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
 
-    #button1 a,
-    #button2 a {
-        font-size: 1em;
+    #button1_cardio a,
+#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a {
+        font-size: 0.8em;
     }
 
 }
 
 @media screen and (max-width: 410px) {
+
+    #iconsports {
+        display: grid;
+        grid-template-areas: 
+        "j k l"
+        "m n o" 
+         ;
+    }
+
+    #picboxe { grid-area: "j"}
+    #piccardio { grid-area: "k"}
+    #picmuscu { grid-area: "l"}
+    #picyoga { grid-area: "l"}
+    #piccaquabike { grid-area: "l"}
+    #piccaquagym { grid-area: "l"}
+    
+
+
     h1 {
         font-size: 1.5em;
         margin-bottom: 1em;
@@ -312,16 +363,17 @@ div #coach {
 
     }
 
-    #button a {
+    #button_aquagym a, #button_aquabike a, #button_yoga a{
         font-size: 0.8em;
     }
 
-    #button1 a,
-    #button2 a {
+    #button1_cardio,
+    #button2_cardio, #button1_boxe, #button2_boxe, #button1_muscu, #button2_muscu {
         font-size: 0.8em;
-        align-items: start;
-        justify-content: start;
-        padding: 8px;
+        align-items: center;
+        justify-items: center;
+        padding: 2px;
+        width: 100%;
     }
 
     div #coach1 {

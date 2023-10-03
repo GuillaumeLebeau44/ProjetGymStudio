@@ -8,6 +8,10 @@ function ouvrirPopup() {
 //     window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
 // }
 
+function ouvrirPopup() {
+    window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
+}
+
 
 // Chande de place la div lié au prénom de l'élève
 

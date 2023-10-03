@@ -15,7 +15,7 @@
 
     --main-font: 'Cormorant Garamond', serif;
     --paragraph-font: 'Nunito Sans', sans-serif;
-    --title1-size: 2.5em;
+    --title1-size: 2.2em;
     --title2-size: 1.8em;
     --paragraph-size: 1.2em;
     ;
@@ -23,11 +23,9 @@
 
 body {
     min-height: 100vh;
-    /* position: relative; */
+    position: relative;
     background-color: var(--main-color);
     color: var(--paragraph-color);
-    /* min-height: 100vh;
-    position: relative; */
 }
 
 /* Sidenav menu */
@@ -111,14 +109,12 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 1% 0 1%;
-    /* margin-top:2%; */
+    margin-top:5%;
     color: var(--paragraph-color);
-
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
-
-    right: 0 */
+    right: 0
 
 
 }
@@ -158,4 +154,22 @@ header {
     width: 40px;
     margin: 10px;
     border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 410px){
+footer {
+    margin-top: 0;
+}
+
+.logoX,
+.logoInsta {
+    width: 1vw;
+}
+
+.logoGymStudio {
+    width: 2vw;
+}
+
 }

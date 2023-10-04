@@ -43,8 +43,7 @@ function init() {
     function functionDisplay() {
 
         const active = document.getElementById("global").dataset.active
-        active = localStorage.getItem("sport")
-        console.log("active", active);
+    
         if (active != this.dataset.section) {
 
             let articleActive = document.getElementById("global").dataset.active; // on récupère l'élément précédent actif

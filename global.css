@@ -100,6 +100,7 @@ body {
 .logoX,
 .logoInsta {
     width: 2vw;
+    object-fit: contain;
 }
 
 footer {
@@ -115,12 +116,25 @@ footer {
     bottom: 0;
     left: 0;
     right: 0
-
-
 }
 
-.logoGymStudio {
+#footerLeft {
+    display: flex;
+    align-content: center;
+    align-items:flex-end;
+    gap: 5px;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.logoGymStudioFooter {
     width: 3vw;
+    padding: 4px;
+    border-radius: 10px;
 }
 
 .logoX:hover,
@@ -152,7 +166,7 @@ header {
 
 .logoGymStudio {
     width: 40px;
-    margin: 10px;
+    padding: 4px;
     border-radius: 10px;
 }
 

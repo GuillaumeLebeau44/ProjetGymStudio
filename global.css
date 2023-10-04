@@ -110,7 +110,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 0 1% 0 1%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     color: var(--paragraph-color);
     /* position: absolute; */
     /* bottom: 0;
@@ -159,7 +159,7 @@ header {
 
 
 .sports_buttons>div,
-#iconsports>div  {
+#iconsports>div {
     --b: 0.3em;
     /* the thickness of the line */
     --c: #F0F2F4;

@@ -7,8 +7,9 @@
 
 body {
     background-color: #242328;
-    overflow: hidden;
-    min-height: 100vh;
+   overflow: auto;
+    /* min-height: 100vh; */
+    /* position:relative, */
 }
 
 #iconsports {
@@ -37,7 +38,7 @@ body {
 .card_aquabike,
 .card_yoga,
 .card_musculation {
-    position: absolute;
+    /* position: absolute; */
     overflow: hidden;
     transition: all 1000ms cubic-bezier(.12, .6, .41, 1.20);
     transition-timing-function: cubic-bezier(.12, .6, .41, 1.20);
@@ -60,7 +61,10 @@ h2 {
 }
 
 p {
-    margin-bottom: 1em;
+
+    /* margin-bottom: 1em; */
+    font-size: var(--paragraph-size);
+
     font-family: var(--paragraph-font);
 }
 
@@ -71,8 +75,8 @@ p {
 .card_aquagym,
 .card_yoga {
     width: 100%;
+    max-height: 100%;
     margin: auto;
-    height: 100vh;
 
 }
 
@@ -99,6 +103,49 @@ div .coach1 {
     height: 100%;
     border-radius: 10%;
 }
+
+/* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
+/* On les "caches" en les décalants */
+
+.appear {
+    position:relative;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    display:initial;
+}
+
+.disappear {
+    animation-duration: 1.5s;
+    animation-name: slideout;
+    display:none;    /* ==> gérer via js pour délay */
+    
+}
+
+
+@keyframes slidein {
+    from {
+        left: -100%;
+        width: 100%;
+    }
+
+    to {
+        left: 0px;
+        width: 100%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 0px;
+        width: 100%;
+    }
+
+    to {
+        left: -100%;
+        width: 100%;
+    }
+}
+
 
 div .coach2 {
     display: grid;
@@ -139,6 +186,15 @@ div .coach2 {
     font-family: var(--paragraph-font);
     /* font-size: var(--paragraph-size); */
     text-decoration: none;
+}
+
+#footerCoachPage {
+    /* position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    
+    /* margin-top:20vh; */
 }
 
 
@@ -321,6 +377,10 @@ div .coach {
     }
 
 
+    /* body {
+        height: 110vh;
+    } */
+
     .photo {
         width: 60%;
         height: 60%;
@@ -445,5 +505,11 @@ div .coach {
     .photo1,
     .photo2 {
         align-items: start;
+    }
+
+    /* mise en page footer */
+
+    #footerCoachPage {
+        margin-top: initial;
     }
 }

@@ -42,7 +42,10 @@ function init() {
 
     function functionDisplay() {
 
-        if (document.getElementById("global").dataset.active != this.dataset.section) {
+        const active = document.getElementById("global").dataset.active
+        active = localStorage.getItem("sport")
+        console.log("active", active);
+        if (active != this.dataset.section) {
 
             let articleActive = document.getElementById("global").dataset.active; // on récupère l'élément précédent actif
             console.log(articleActive);
@@ -57,6 +60,7 @@ function init() {
                 document.getElementById(this.dataset.section).classList.remove("disappear"); // on nettoye son ancienne classe dissappear
 
                 document.getElementById("global").dataset.active = this.dataset.section; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
+                console.log(document.getElementById("global").dataset.active);
                 console.log(this.dataset.section);
             }, 700);
 

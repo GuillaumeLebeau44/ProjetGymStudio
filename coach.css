@@ -17,6 +17,10 @@ body {
     padding: 15px;
 }
 
+#iconsports>div:hover {
+    cursor: pointer;
+}
+
 #piccardio,
 #picmuscu,
 #picyoga,
@@ -57,7 +61,6 @@ h2 {
 
 p {
     margin-bottom: 1em;
-    font-size: var(--paragraph-size);
     font-family: var(--paragraph-font);
 }
 
@@ -77,7 +80,7 @@ p {
 
 div .coach1 {
     display: grid;
-    width:100%;
+    width: 100%;
     gap: 25px;
     height: auto;
     grid-template-areas:
@@ -99,7 +102,7 @@ div .coach1 {
 
 div .coach2 {
     display: grid;
-    width:100%;
+    width: 100%;
     gap: 25px;
     height: auto;
     grid-template-areas:
@@ -121,7 +124,11 @@ div .coach2 {
 }
 
 #button1_cardio a,
-#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a{
+#button2_cardio a,
+#button1_boxe a,
+#button2_boxe a,
+#button1_muscu a,
+#button2_muscu a {
     border-radius: 20px;
     /* border-color:var(--secondary-color); */
     padding: 12px;
@@ -130,7 +137,7 @@ div .coach2 {
     text-align: center;
     color: var(--paragaph-color);
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
+    /* font-size: var(--paragraph-size); */
     text-decoration: none;
 }
 
@@ -149,7 +156,9 @@ div .coach2 {
     grid-area: b;
 }
 
-#button1_cardio, #button1_muscu, #button1_boxe {
+#button1_cardio,
+#button1_muscu,
+#button1_boxe {
     grid-area: c;
 }
 
@@ -171,7 +180,7 @@ div .coach2 {
 
 div .coach {
     display: grid;
-    width:100vw;
+    width: 100vw;
     gap: 25px;
     height: auto;
     grid-template-areas:
@@ -200,7 +209,9 @@ div .coach {
     grid-area: h;
 }
 
-#button_aquagym, #button_aquabike, #button_yoga {
+#button_aquagym,
+#button_aquabike,
+#button_yoga {
     grid-area: i;
 }
 
@@ -208,15 +219,19 @@ div .coach {
 .text {
     color: white;
     margin-top: 1em;
-    margin-bottom:0;
+    margin-bottom: 0;
     width: 100%;
 }
 
-#button_aquagym, #button_aquabike, #button_yoga {
+#button_aquagym,
+#button_aquabike,
+#button_yoga {
     height: 10vh;
 }
 
-#button_aquagym a, #button_aquabike a, #button_yoga a {
+#button_aquagym a,
+#button_aquabike a,
+#button_yoga a {
     border-style: solid;
     border-radius: 20px;
     border-color: #183D3D;
@@ -249,18 +264,25 @@ div .coach {
         object-fit: fill;
     }
 
-    #button_aquagym a, #button_aquabike a, #button_yoga a {
+    #button_aquagym a,
+    #button_aquabike a,
+    #button_yoga a {
         font-size: 1.2em;
     }
 
     #button1_cardio a,
-#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a {
+    #button2_cardio a,
+    #button1_boxe a,
+    #button2_boxe a,
+    #button1_muscu a,
+    #button2_muscu a {
         font-size: 1em;
     }
 
-    div .coach1, div .coach2 {
+    div .coach1,
+    div .coach2 {
         padding-inline: 5%;
-        gap:10px;
+        gap: 10px;
         align-items: start;
     }
 
@@ -299,7 +321,7 @@ div .coach {
     }
 
 
-    .photo{
+    .photo {
         width: 60%;
         height: 60%;
         justify-content: center;
@@ -311,12 +333,16 @@ div .coach {
         text-align: center;
     }
 
-    #button_aquagym a, #button_aquabike a, #button_yoga a  {
+    #button_aquagym a,
+    #button_aquabike a,
+    #button_yoga a {
         font-size: 1em;
         margin-top: 0;
     }
 
-    div #button_aquagym, div #button_aquabike, div #button_yoga {
+    div #button_aquagym,
+    div #button_aquabike,
+    div #button_yoga {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -324,7 +350,11 @@ div .coach {
     }
 
     #button1_cardio a,
-#button2_cardio a, #button1_boxe a, #button2_boxe a, #button1_muscu a, #button2_muscu a {
+    #button2_cardio a,
+    #button1_boxe a,
+    #button2_boxe a,
+    #button1_muscu a,
+    #button2_muscu a {
         font-size: 0.8em;
     }
 
@@ -334,19 +364,36 @@ div .coach {
 
     #iconsports {
         display: grid;
-        grid-template-areas: 
-        "j k l"
-        "m n o" 
-         ;
+        grid-template-areas:
+            "j k l"
+            "m n o"
+        ;
     }
 
-    #picboxe { grid-area: "j"}
-    #piccardio { grid-area: "k"}
-    #picmuscu { grid-area: "l"}
-    #picyoga { grid-area: "l"}
-    #piccaquabike { grid-area: "l"}
-    #piccaquagym { grid-area: "l"}
-    
+    #picboxe {
+        grid-area: "j"
+    }
+
+    #piccardio {
+        grid-area: "k"
+    }
+
+    #picmuscu {
+        grid-area: "l"
+    }
+
+    #picyoga {
+        grid-area: "l"
+    }
+
+    #piccaquabike {
+        grid-area: "l"
+    }
+
+    #piccaquagym {
+        grid-area: "l"
+    }
+
 
 
     h1 {
@@ -363,12 +410,18 @@ div .coach {
 
     }
 
-    #button_aquagym a, #button_aquabike a, #button_yoga a{
+    #button_aquagym a,
+    #button_aquabike a,
+    #button_yoga a {
         font-size: 0.8em;
     }
 
     #button1_cardio,
-    #button2_cardio, #button1_boxe, #button2_boxe, #button1_muscu, #button2_muscu {
+    #button2_cardio,
+    #button1_boxe,
+    #button2_boxe,
+    #button1_muscu,
+    #button2_muscu {
         font-size: 0.8em;
         align-items: center;
         justify-items: center;

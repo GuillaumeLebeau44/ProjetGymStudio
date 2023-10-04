@@ -285,3 +285,9 @@ body {
     height: 50px;
 }
 }
+
+@media screen and (max-width: 900px) {
+    .sports_buttons { 
+        padding-inline: 0%;
+    } 
+}

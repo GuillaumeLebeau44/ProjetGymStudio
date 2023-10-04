@@ -69,6 +69,7 @@
 
 #sports_diff {
     grid-area: e;
+
 }
 
 #sports_price {
@@ -82,11 +83,13 @@
 #coach_button {
     grid-area: f;
 }
-/* 
-img {
-    width: 100%;
 
+
+/* #sports_diff>img {
+    align-items: center;
+    justify-content: center;
 } */
+
 
 #coach_button {
     display: flex;
@@ -115,7 +118,6 @@ img {
 
 #sports_diff>img {
     object-fit: cover;
-    width: 50px;
     height: 50px;
 }
 
@@ -243,7 +245,7 @@ body {
     grid-area: c;
 }
 
-#sports_diff b {
+#sports_diff {
     grid-area: e;
 }
 
@@ -262,7 +264,6 @@ body {
 
 #sports_diff>img {
     object-fit: cover;
-    width: 50px;
     height: 50px;
 }
 }

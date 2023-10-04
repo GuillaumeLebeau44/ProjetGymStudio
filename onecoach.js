@@ -10,6 +10,11 @@ function init() {
         document.getElementById(sportOrigin).classList.add("appear"); // on ajoute la classe appear à l'élément qui a été séléctionné pour le faire apparaitre
         document.getElementById(sportOrigin).classList.remove("disappear"); // on nettoye son ancienne classe dissappear
 
+        // setTimeout(() => {
+        //     document.getElementById(sportOrigin).style.display = "none";
+        // }, 700);
+
+
         document.getElementById("global").dataset.active = sportOrigin; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
         // console.log(this.dataset.section);
     };
@@ -60,7 +65,7 @@ function init() {
                 document.getElementById("global").dataset.active = this.dataset.section; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
                 console.log(document.getElementById("global").dataset.active);
                 console.log(this.dataset.section);
-            }, 700);
+            }, 0);
 
         }
     }

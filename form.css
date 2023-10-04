@@ -187,9 +187,9 @@ input {
         width: 20vw;
     }
 
-    .logoTram,
-    .logoX,
-    .logoInsta {
+    .logoTram
+    /*.logoX,
+    .logoInsta*/ {
         width: 3vw;
     }
 
@@ -199,10 +199,12 @@ input {
 }
 
 @media screen and (max-width: 920px) {
-    /* #infoClients {
-        justify-content: center; 
-        align-content: center; 
-    } */
+
+    /*#infoClients {*/
+        /* justify-content: center; */
+        /* align-content: center; */
+   /* }*/
+
 
     #availableClient {
         padding-right: 0;
@@ -226,9 +228,9 @@ input {
         width: 50vw;
     }
 
-    .logoTram,
+    .logoTram/*,
     .logoX,
-    .logoInsta {
+    .logoInsta*/ {
         width: 3vw;
     }
 
@@ -246,16 +248,18 @@ input {
 
     /* h1,
     h2 {
-        font-size: 2rem;
+
+         font-size: 2rem; 
+
     } */
 
     #sportCoachPic {
         justify-content: space-around;
     }
 
-    .logoTram,
+    .logoTram/*
     .logoX,
-    .logoInsta {
+    .logoInsta */{
         width: 4vw;
     }
 

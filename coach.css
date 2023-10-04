@@ -61,7 +61,10 @@ h2 {
 }
 
 p {
-    margin-bottom: 1em;
+
+    /* margin-bottom: 1em; */
+    font-size: var(--paragraph-size);
+
     font-family: var(--paragraph-font);
 }
 

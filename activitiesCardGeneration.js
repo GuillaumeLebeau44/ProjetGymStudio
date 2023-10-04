@@ -99,6 +99,24 @@ const listingActivities = [
 const cardActivityContainer = document.querySelector(".cardActivityContainer");
 const choiceSport = document.querySelectorAll(".choiceSport")
 
+const onLoadCard = document.querySelector(".cardActivityContainer")
+onLoadCard.addEventListener("onload", onLoad())
+
+function onLoad () {
+
+    const html = createCardActivity(
+        listingActivities[0].sportName,
+        listingActivities[0].desc,
+        listingActivities[0].price1,
+        listingActivities[0].price2,
+        listingActivities[0].difficulty,
+        listingActivities[0].activityImg,
+        listingActivities[0].link,
+        listingActivities[0].data
+    );
+    cardActivityContainer.innerHTML += html;
+
+}
 
 function onLoad() {
     const html = createCardActivity(

@@ -10,6 +10,11 @@ function init() {
         document.getElementById(sportOrigin).classList.add("appear"); // on ajoute la classe appear à l'élément qui a été séléctionné pour le faire apparaitre
         document.getElementById(sportOrigin).classList.remove("disappear"); // on nettoye son ancienne classe dissappear
 
+        // setTimeout(() => {
+        //     document.getElementById(sportOrigin).style.display = "none";
+        // }, 700);
+
+
         document.getElementById("global").dataset.active = sportOrigin; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
         // console.log(this.dataset.section);
     };
@@ -43,8 +48,9 @@ function init() {
     function functionDisplay() {
 
         const active = document.getElementById("global").dataset.active
-        
-    
+
+
+
         if (active != this.dataset.section) {
 
             let articleActive = document.getElementById("global").dataset.active; // on récupère l'élément précédent actif
@@ -62,7 +68,7 @@ function init() {
                 document.getElementById("global").dataset.active = this.dataset.section; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
                 console.log(document.getElementById("global").dataset.active);
                 console.log(this.dataset.section);
-            }, 700);
+            }, 0);
 
         }
     }
@@ -107,6 +113,21 @@ function init() {
 //     }
 
 // }
+
+// Récupérer la data des boutons des Coach avant d'arriver sur le formulaire
+const tab2 = document.querySelectorAll(".buttonCoach2")
+
+for (let k = 0; k < tab2.length; k++) {
+    tab2[k].addEventListener("click", functionFromCoach);
+}
+
+function functionFromCoach(e) {
+    localStorage.removeItem("sport");
+    const result2 = e.target.dataset.button;
+    localStorage.setItem("sport2", result2);
+}
+
+console.log(result2)
 
 
 

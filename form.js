@@ -90,17 +90,19 @@ function selectCoach() {
     } else if (choice === "coachBoxe2") {
         document.getElementById("coachFormBox2").style.display = "flex";
     } else if (choice === "coachMuscu1") {
-        document.getElementById("coachFormMuscu1").style.display = "flex";
-    } else if (choice === "coachMuscu2") {
         document.getElementById("coachFormMuscu2").style.display = "flex";
+    } else if (choice === "coachMuscu2") {
+        document.getElementById("coachFormMuscu1").style.display = "flex";
     } else if (choice === "coachAquaBike") {
         document.getElementById("coachFormAquaBike").style.display = "flex";
     } else if (choice === "coachCardio1") {
         document.getElementById("coachFormCardio1").style.display = "flex";
     } else if (choice === "coachCardio2") {
         document.getElementById("coachFormCardio2").style.display = "flex";
-    } else {
+    } else if (choice === "coachAquaGym") {
         document.getElementById("coachFormAquaGym").style.display = "flex";
+    } else {
+        maskPic[i].style.display = "none";
     }
 }
 
@@ -112,4 +114,9 @@ function selectCoach() {
 function reserveCoach() {
     selectedCoach[1].style.display = "block";
 
+}
+
+function confirmSend() {
+    el = document.getElementById("example");
+    el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
 }

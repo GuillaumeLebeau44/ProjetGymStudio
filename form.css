@@ -130,7 +130,8 @@ button:hover {
 select,
 input {
     border-radius: 5px;
-    background-color: var(--third-color);
+    background-color: white;
+    border: solid 2px var(--third-color);
 }
 
 ::placeholder {

@@ -49,6 +49,8 @@ function init() {
 
         const active = document.getElementById("global").dataset.active
 
+
+
         if (active != this.dataset.section) {
 
             let articleActive = document.getElementById("global").dataset.active; // on récupère l'élément précédent actif
@@ -111,6 +113,21 @@ function init() {
 //     }
 
 // }
+
+// Récupérer la data des boutons des Coach avant d'arriver sur le formulaire
+const tab2 = document.querySelectorAll(".buttonCoach2")
+
+for (let k = 0; k < tab2.length; k++) {
+    tab2[k].addEventListener("click", functionFromCoach);
+}
+
+function functionFromCoach(e) {
+    localStorage.removeItem("sport");
+    const result2 = e.target.dataset.button;
+    localStorage.setItem("sport2", result2);
+}
+
+console.log(result2)
 
 
 

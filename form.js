@@ -1,19 +1,5 @@
-let windowFeatures = "left=400,top=300,width=320,height=200";
 
-function ouvrirPopup() {
-    window.open("popupForm.html", "Confirmation d'envoi", windowFeatures);
-}
-
-// function ouvrirPopup() {
-//     window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
-// }
-
-function ouvrirPopup() {
-    window.alert(" Votre demande de réservation a bien été prise en compte. Le coach reviendra vers vous dans les meilleurs délais. Toute l'équipe de GymStudio vous remercie pour l'intérêt que vous portez à ses cours et espère vous retrouvez bientôt dans nos salles!")
-}
-
-
-// Chande de place la div lié au prénom de l'élève
+// Change de place la div lié au prénom de l'élève
 
 window.addEventListener('resize', responsiveForm)
 function responsiveForm() {
@@ -106,17 +92,35 @@ function selectCoach() {
     }
 }
 
-
-// Lien entre page prof et formulaire
-
-// const buttonBob = document.querySelector("#buttonBob");
-// buttonBob.addEventListener("click", reserveCoach);
-function reserveCoach() {
-    selectedCoach[1].style.display = "block";
-
-}
-
 function confirmSend() {
     el = document.getElementById("example");
     el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
+}
+
+
+
+// Lien entre page coach et formulaire
+
+// // Arrivée sur le formulaire pour choix du coach
+
+function init2() {
+
+    let coachOrigin = localStorage.getItem("sport2");
+    console.log(coachOrigin)
+
+    // for (let i = 0; i < selectedCoach.length; i++) {
+    //     if (coachOrigin === selectedCoach.dataset.select) {
+
+    //     }
+    // }
+
+
+    // function functionDisplayFromButtonCoach() {
+    //     document.getElementById(sportOrigin).classList.add("appear"); // on ajoute la classe appear à l'élément qui a été séléctionné pour le faire apparaitre
+    //     document.getElementById(sportOrigin).classList.remove("disappear"); // on nettoye son ancienne classe dissappear
+
+    //     document.getElementById("global").dataset.active = sportOrigin; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
+    //     // console.log(this.dataset.section);
+    // };
+
 }

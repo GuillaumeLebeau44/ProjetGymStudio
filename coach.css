@@ -7,9 +7,11 @@
 
 body {
     background-color: #242328;
-    overflow: hidden;
-    min-height: 100vh;
+    /* overflow: hidden; */
+    height: 100vh;
 }
+
+
 
 #iconsports {
     display: flex;
@@ -41,7 +43,7 @@ body {
     overflow: hidden;
     transition: all 1000ms cubic-bezier(.12, .6, .41, 1.20);
     transition-timing-function: cubic-bezier(.12, .6, .41, 1.20);
-    margin: 0;
+
 }
 
 
@@ -72,11 +74,10 @@ p {
 .card_yoga {
     width: 100%;
     margin: auto;
-    height: 100vh;
-
 }
 
 /* css 2 coach */
+
 
 div .coach1 {
     display: grid;
@@ -113,8 +114,9 @@ div .coach2 {
     padding-top: 0.5em;
     align-items: center;
     justify-items: center;
-    /* margin-bottom: 2em; */
 }
+    
+ 
 
 .photo2 img {
     object-fit: cover;
@@ -130,16 +132,40 @@ div .coach2 {
 #button1_muscu a,
 #button2_muscu a {
     border-radius: 20px;
-    /* border-color:var(--secondary-color); */
     padding: 12px;
     background-color: var(--secondary-color);
     width: 50%;
     text-align: center;
     color: var(--paragaph-color);
     font-family: var(--paragraph-font);
-    /* font-size: var(--paragraph-size); */
     text-decoration: none;
 }
+
+#button1_cardio :hover{
+    cursor: pointer;
+    background-color: #122a2b;
+}
+#button2_cardio :hover{
+    cursor: pointer;
+    background-color: #122a2b;
+}
+#button1_boxe :hover {
+    cursor: pointer;
+    background-color: #122a2b;
+}
+#button2_boxe :hover{
+    cursor: pointer;
+    background-color: #122a2b;
+}
+#button1_muscu :hover{
+ cursor: pointer;
+    background-color: #122a2b;
+}
+#button2_muscu :hover {
+    cursor: pointer;
+    background-color: #122a2b;
+}
+
 
 
 
@@ -184,8 +210,10 @@ div .coach {
     gap: 25px;
     height: auto;
     grid-template-areas:
-        "g  h"
-        "g  i"
+        "g g h"
+        "g g h"
+        "g g i"
+        "g g i"
     ;
     padding-inline: 15%;
     padding-top: 3em;
@@ -255,9 +283,6 @@ div .coach {
         font-size: 1.7em;
     }
 
-    p {
-        font-size: 1.2em;
-    }
 
     .photo {
         width: 100%;
@@ -309,12 +334,26 @@ div .coach {
         font-size: 1em;
     }
 
+    .card_box,
+.card_musculation,
+.card_cardio,
+.card_aquabike,
+.card_aquagym,
+.card_yoga {
+    width: 100%;
+    margin-bottom: 5%;
+    height: 80vh;
+
+}
+
+
     div .coach {
         display: flex;
         flex-direction: column;
         gap: 0;
         padding-top: 0.5em;
     }
+    
 
     div .photo {
         width: 100%;
@@ -336,7 +375,7 @@ div .coach {
     #button_aquagym a,
     #button_aquabike a,
     #button_yoga a {
-        font-size: 1em;
+        font-size: 0.8em;
         margin-top: 0;
     }
 

@@ -37,7 +37,7 @@ const listingActivities = [
         desc: "La boxe est un sport dynamique qui présente des atouts pour la forme et le mental. Elle permet d'améliorer le cardio vasculaire, l'endurance et la respiration. La boxe fait par conséquent travailler la respiration, l'endurance, l'équilibre et la force.",
         price1: "30 €",
         price2: "250 €",
-        difficulty: "images/haltereDiff.PNG",
+        difficulty: "images/haltereDiff3.PNG",
         activityImg: "images/activityBox.jpg",
         link: "coach.html",
         data: "box"
@@ -47,7 +47,7 @@ const listingActivities = [
         desc: "Le cardio training est une forme d'activité physique rythmique qui permet d'augmenter votre fréquence cardiaque dans votre zone cible de fréquence cardiaque. C'est dans cette zone que votre corps brûle le plus de graisses et de calories.",
         price1: "30 €",
         price2: "250 €",
-        difficulty: "images/haltereDiff.PNG",
+        difficulty: "images/haltereDiff3.PNG",
         activityImg: "images/activityCardio.webp",
         link: "coach.html",
         data: "cardio"
@@ -57,7 +57,7 @@ const listingActivities = [
         desc: "La musculation vise au développement des muscles squelettiques, pratiquée dans le but d'acquérir plus de force, d'endurance ou de volume musculaire. Les bienfaits sont notables, un bon régime d'entrainement physique a été prouvé comme étant bénéfique pour la santé physique et mentale.",
         price1: "30 €",
         price2: "275 €",
-        difficulty: "images/haltereDiff.PNG",
+        difficulty: "images/haltereDiff2.PNG",
         activityImg: "images/activityMusculation.jpg",
         link: "coach.html",
         data: "musculation"

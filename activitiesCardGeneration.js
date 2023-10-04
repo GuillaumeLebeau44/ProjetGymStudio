@@ -23,7 +23,7 @@ function createCardActivity(sportName, desc, price1, price2, difficulty, activit
                     <img src=${activityImg}>
                 </div>
                 <div id="coach_button">
-                    <a href=${link} class= "buttoncoach" data-button=${data}>Voir les coach </a>
+                    <a class="buttoncoach" href="${link}" data-button=${data}>Voir les coach </a>
                 </div>
             </div>
 
@@ -95,12 +95,30 @@ const listingActivities = [
 
 ];
 
+
 const cardActivityContainer = document.querySelector(".cardActivityContainer");
 const choiceSport = document.querySelectorAll(".choiceSport")
 
 
+function onLoad() {
+    const html = createCardActivity(
+        listingActivities[0].sportName,
+        listingActivities[0].desc,
+        listingActivities[0].price1,
+        listingActivities[0].price2,
+        listingActivities[0].difficulty,
+        listingActivities[0].activityImg,
+        listingActivities[0].link,
+        listingActivities[0].data
+    );
+    cardActivityContainer.innerHTML += html;
+    const tab = document.querySelector(".buttoncoach")
+    tab.addEventListener("click", functionFromActivity);
+}
+
+onLoad()
+
 const generateCardActivities = (e) => {
-    // cardActivityContainer.classList.add("disappear")
     cardActivityContainer.innerHTML = "";
     for (let i = 0; i < listingActivities.length; i++) {
         if (e.target.id === listingActivities[i].sportName) {
@@ -119,6 +137,9 @@ const generateCardActivities = (e) => {
             cardActivityContainer.innerHTML += html;
         }
     }
+
+    const tab = document.querySelector(".buttoncoach")
+    tab.addEventListener("click", functionFromActivity);
 }
     ;
 
@@ -126,11 +147,8 @@ for (let k = 0; k < choiceSport.length; k++) {
     choiceSport[k].addEventListener("click", generateCardActivities);
 }
 
-const tab = document.querySelector(".buttoncoach")
 
-for (let m = 0; m < tab.length; m++) {
-    tab[m].addEventListener("click", functionFromActivity);
-}
+
 
 
 // for (let i = 0; i < tab.length; i++) {
@@ -138,7 +156,12 @@ for (let m = 0; m < tab.length; m++) {
 // }
 
 function functionFromActivity(e) {
-    console.log(e)
-    result = e.target.dataset.button;
+
+    const result = e.target.dataset.button;
+
     localStorage.setItem("sport", result)
 }
+
+// if onclick = data : "aquabike" => onload coach.html / id d'un div    );
+// cardActivityContainer.innerHTML += html;
+// }

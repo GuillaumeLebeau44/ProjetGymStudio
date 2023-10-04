@@ -53,6 +53,7 @@ h1 {
     transform: translate(-50%, -50%);
     color: var(--paragraph-color);
     font-family: var(--main-font);
+    font-size: 2.5em;
 }
 
 h2 {
@@ -62,6 +63,17 @@ h2 {
     transform: translate(-50%, -50%);
     color: var(--paragraph-color);
     font-family: var(--main-font);
+    font-size: var(--title1-size);
+}
+
+h3 {
+    font-family: var(--main-font);
+    font-size: var(--title2-size);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font);
 }
 
 .flex-container {
@@ -116,6 +128,7 @@ button {
     color: var(--paragraph-color);
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
+    font-size: var(--paragraph-size);
     padding: .5rem 1rem;
     border-radius: 10px;
 }

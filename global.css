@@ -114,15 +114,13 @@ footer {
     margin-top: 2%;
 
     color: var(--paragraph-color);
-    /* position: absolute; */
-    /* bottom: 0;
+    position: absolute; 
+    bottom: 0;
     left: 0;
-    right: 0 */
 
 #footerRight {
     display: flex;
     justify-content: space-between;
-    gap: 5px;
 }
 
 .logoGymStudioFooter {

@@ -128,7 +128,7 @@ button {
     color: var(--paragraph-color);
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
+    font-size: 1em;
     padding: .5rem 1rem;
     border-radius: 10px;
 }
@@ -141,6 +141,16 @@ button {
 
 @media screen and (max-width: 768px) {
 
+
+    h3{
+        font-size: var(--paragraph-size);
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+
     .button {
         position: initial;
         display: flex;
@@ -151,7 +161,6 @@ button {
 
     button {
         width: 80vw;
-        /* font-size: 1rem; */
         font-weight: bold;
     }
 
@@ -176,10 +185,11 @@ button {
         width: 100vw;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2em;
     }
 
     .flex-container div img {
-        width: 80vw;
+        width: 75vw;
 
     }
 
